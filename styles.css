@@ -1,0 +1,222 @@
+@import url(css/reset.css);
+@import url(css/home.css);
+@import url(css/modal.css);
+
+:root {
+  /* Light Theme */
+  --text-color: #000;
+  --base1: #ebeced;
+  --base2: #c3c7ca;
+  --base3: #9ba3a7;
+  --base35: #90999e;
+  --base4: #737e83;
+  --base5: #4b5960;
+
+    /* Dark Theme */
+    --dttext-color: #fff;
+    /* --base6: #37474f;
+    --base7: #2c383f;
+    --base8: #212a2f;
+    --base9: #161c1f;
+    --base10: #0b0e0f; */
+
+    --base6: #465A63;
+    --base7: #42545E;
+    --base8: #3B4B54;
+    --base85: #37434b;
+    --base9: #2D3A40;
+    --base10: #1C2426;
+
+
+  /* Basic Colors */
+  --blue: #2e86ab;
+  --green: #2aa876;
+  --yellow: #ffd265;
+  --orange: #f19c65;
+  --red: #e8554e;
+
+  /* Game Colors */
+  /* --quiz: #5C8EF2;
+  --term: #55A63F;
+  --text: #D91818; */
+
+  --term: #f19c65;
+  --text: #03A688;
+  --quiz: #2e86ab;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--base2);
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  width: 100vw;
+  max-width: 100%;
+  height: 80px;
+  background: var(--base1);
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  z-index: 2;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px 20px;
+  width: calc(100% - 40px);
+  z-index: 2;
+}
+
+.header-container div,
+.header-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container nav {
+  container-type: inline-size;
+  gap: 8px;
+}
+
+.header-container .left-side {
+  justify-content: left;
+}
+
+.header-container .right-side {
+  justify-content: right;
+}
+
+.button {
+  border: 2px solid var(--base3);
+  background: var(--base2);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--blue);
+}
+
+.right-side {
+  text-align: right;
+}
+
+.button span {
+  display: none;
+}
+
+.button:hover {
+  background: var(--blue);
+}
+
+@container (min-width: 288px) {
+  .button {
+    width: 140px;
+    justify-content: left;
+  }
+
+  .button span {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: inline;
+  }
+
+  .icon {
+    padding: 0 8px;
+  }
+}
+
+.icon-darkmode {
+  background-color: transparent;
+  filter: invert(100%);
+}
+
+main {
+  width: 100vw;
+  max-width: 100%;
+  height: calc(100vh - 80px);
+}
+
+h2 {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h4 {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+p {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+html {
+  max-width: 100%;
+}
+
+#header-quiz {
+  background-color: var(--quiz);
+}
+
+#header-term {
+  background-color: var(--term);
+}
+
+#header-text {
+  background-color: var(--text);
+}
+
+.paper {
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.15);
+}

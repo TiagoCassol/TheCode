@@ -1,0 +1,1352 @@
+{
+  "4": [
+    {
+      "id": 11,
+      "name": "BIOS",
+      "length": 4,
+      "definition": "(Basic Input/Output System) is the Firmware that activates peripheral devices in a PC. Includes routines for the keyboard, screen, disk, parallel port and serial port, and for internal services such as time and date. It accepts requests from the device drivers in the operating system as well from application programs. It also contains autostart functions that test the system on startup and prepare the computer for operation. It loads the operating system and passes control to it."
+    },
+    {
+      "id": 16,
+      "name": "BIAS",
+      "length": 4,
+      "definition": "A measure of how closely the mean value in a series of replicate measurements approaches the true value. See: accuracy, precision, calibration."
+    },
+    {
+      "id": 19,
+      "name": "BITS",
+      "length": 4,
+      "definition": "A contraction of the term binary digit. The bit is the basic unit of digital data. It may be in one of two states, logic 1 or logic 0. It may be thought of as a switch which is either on or off. Bits are usually combined into computer words of various sizes, such as the byte."
+    },
+    {
+      "id": 22,
+      "name": "BOMB",
+      "length": 4,
+      "definition": "A trojan horse which attacks a computer system upon the occurrence of a specific logical event [logic bomb], the occurrence of a specific time-related logical event [time bomb], or is hidden in electronic mail or data and is triggered when read in a certain way [letter bomb]. See: trojan horse, virus, worm."
+    },
+    {
+      "id": 29,
+      "name": "BUGS",
+      "length": 4,
+      "definition": "Software bugs are errors, flaws or faults in the design, development, or operation of computer software that causes it to produce an incorrect or unexpected result, or to behave in unintended ways. The process of finding and correcting bugs is termed debugging and often uses formal techniques or tools to pinpoint bugs."
+    },
+    {
+      "id": 30,
+      "name": "BYTE",
+      "length": 4,
+      "definition": "is a unit of digital information that most commonly consists of eight bits. Historically, the byte was the number of bits used to encode a single character of text in a computer and for this reason it is the smallest addressable unit of memory in many computer architectures. To disambiguate arbitrarily sized bytes from the common 8-bit definition, network protocol documents such as the Internet Protocol"
+    },
+    {
+      "id": 31,
+      "name": "CHIP",
+      "length": 4,
+      "definition": "An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or chip) of semiconductor material, usually silicon. On the chip, transistors act as miniature electrical switches that can turn a current on or off."
+    },
+    {
+      "id": 35,
+      "name": "CODE",
+      "length": 4,
+      "definition": "Source code is computer instructions and data definitions expressed in a form suitable for input to an assembler, compiler or other translator. (2) The human readable version of the list of instructions [program] that cause a computer to perform a task."
+    },
+    {
+      "id": 49,
+      "name": "DATA",
+      "length": 4,
+      "definition": "Representations of facts, concepts, or instructions in a manner suitable for communication, interpretation, or processing by humans or by automated means. data is information that has been translated into a form that is efficient for movement or processing. Relative to today's computers and transmission media, data is information converted into binary digital form. It is acceptable for data to be used as a singular subject or a plural subject."
+    },
+    {
+      "id": 59,
+      "name": "DISK",
+      "length": 4,
+      "definition": "A disk (or disk drive) refers to a hardware component that is used for storing and accessing digital data. A disk consists of one or more spinning platters that are coated with a magnetic material and a read/write head that moves across the platters to read or write data. Disks are commonly used in software development for storing and retrieving data in various types of applications and systems, including databases, file storage systems, and operating systems. Disks can be internal to a computer system, such as a hard disk drive (HDD) or solid-state drive (SSD), or external, such as a USB drive or an external hard drive."
+    },
+    {
+      "id": 73,
+      "name": "FILE",
+      "length": 4,
+      "definition": "File is a collection of related data or information that is stored on a computer or other electronic device. Files can contain a wide variety of data, such as text, images, audio, video, and program code. They are used to store and organize information for easy retrieval and processing by software systems and applications. Files can have different formats, depending on the type of data they contain and the software used to create or access them. Common file formats include text files, image files, audio files, video files, and executable files. Files are a fundamental component of many software systems and applications and play a crucial role in data storage, management, and sharing."
+    },
+    {
+      "id": 75,
+      "name": "FLAG",
+      "length": 4,
+      "definition": "Flag is a variable or indicator that is used to represent a condition or state in a software system or application. Flags are often used to control the behavior of the system or application based on specific conditions or user actions. For example, a flag might be used to indicate whether a user is logged in or not, or to indicate whether a certain feature or option is enabled or disabled. Flags can be set or cleared by the system or application code, or by user input. They are commonly used in programming languages such as C, Java, and Python to simplify code and improve efficiency. Flags are a fundamental concept in software development and are used in many different types of applications and systems."
+    },
+    {
+      "id": 90,
+      "name": "JAVA",
+      "length": 4,
+      "definition": "Java is a general-purpose programming language that is designed to be portable, platform-independent, and secure. It was first released by Sun Microsystems in 1995 and is now owned and maintained by Oracle Corporation. Java is known for its simplicity, readability, and robustness, making it a popular choice for developing a wide range of applications, including desktop, mobile, web, and enterprise software. Java code is compiled into an intermediate bytecode format that can be executed on any platform that has a Java Virtual Machine (JVM) installed. This allows Java applications to run on a variety of operating systems and hardware architectures without the need for recompilation. Java also includes a large standard library of classes and functions that provide a rich set of features for developing complex applications."
+    },
+    {
+      "id": 92,
+      "name": "KEYS",
+      "length": 4,
+      "definition": "(1) Cryptographic keys are strings of data that are used to encrypt and decrypt messages, files, or data. Cryptographic keys are often used to secure sensitive information and ensure the privacy and integrity of data in transit or at rest. (2) In database development, KEYS can refer to primary keys or foreign keys, which are used to establish relationships between tables in a database. Primary keys are unique identifiers for each record in a table, while foreign keys reference primary keys in other tables to establish relationships between the tables."
+    },
+    {
+      "id": 104,
+      "name": "MENU",
+      "length": 4,
+      "definition": "a menu is a list of options presented to a user on a computer screen or other interface, from which they can select an action to perform or a setting to configure. Menus can be hierarchical, with sub-menus that expand to show additional options, and can be used in a variety of applications and systems, including software programs, websites, and mobile apps."
+    },
+    {
+      "id": 113,
+      "name": "NODE",
+      "length": 4,
+      "definition": "A node is a single computing device within a network. It can be a computer, server, router, or any other device that is connected to the network and has its own unique address. Nodes can communicate with each other through the network by sending and receiving data packets. In distributed computing systems, nodes may also refer to individual processing units that work together to perform a larger task."
+    },
+    {
+      "id": 114,
+      "name": "NULL",
+      "length": 4,
+      "definition": "Null is a special value that represents the intentional absence of any object value. It is often used as a placeholder or to indicate that a variable or object has no value or has not been initialized. Both 'null' and 'undefined' represent the absence of a value, but there is a difference between them. 'Null' is a deliberate value that is assigned to a variable or object to represent a lack of value. 'Undefined' is an automatic value assigned by the language itself to indicate the absence of a value or the absence of a variable or object."
+    },
+    {
+      "id": 128,
+      "name": "PATH",
+      "length": 4,
+      "definition": "(1) Path is the specific location of a file or directory within a file system. It specifies the route that needs to be followed in order to access the file or directory. Paths can be either absolute or relative. An absolute path specifies the complete path from the root directory to the file or directory, while a relative path specifies the path from the current directory to the file or directory. (2) A sequence of instructions that may be performed in the execution of a computer program."
+    },
+    {
+      "id": 145,
+      "name": "RISK",
+      "length": 4,
+      "definition": "Risks refers to the potential for loss or harm to occur as a result of uncertainty in a project. Risk is a inherent part of any project, and can arise from a variety of sources, such as technical complexity, external factors, budget constraints, and more. Effective risk management involves identifying, assessing, and prioritizing risks, and then implementing strategies to mitigate or minimize their potential impact on the project."
+    },
+    {
+      "id": 159,
+      "name": "STUB",
+      "length": 4,
+      "definition": "A stub is a small piece of code or a substitute program that stands in for a larger program or module. Stubs are used in testing and debugging to simulate the behavior of a part of a system that is not yet available or complete. They may also be used in distributed computing to represent remote components that are not yet accessible or to simulate network communication. Stubs typically have limited functionality and are designed to respond to specific input in a predetermined way, allowing other parts of the system to be tested or developed independently."
+    },
+    {
+      "id": 161,
+      "name": "SYNC",
+      "length": 4,
+      "definition": "'Sync' is short for 'synchronization', which refers to the process of coordinating or aligning multiple devices, programs, or processes so that they are all operating in a harmonized manner. Sync is typically used to ensure that data, files, or other information are consistent across different systems or devices. For example, a user might sync their mobile phone with their computer to make sure that their contacts, emails, and other data are up to date on both devices. In software development, synchronization is often used in distributed systems or multi-threaded applications where multiple threads or processes are accessing shared resources. The goal of synchronization is to prevent conflicts, data corruption, or other issues that can arise when multiple components are accessing the same data simultaneously."
+    },
+    {
+      "id": 162,
+      "name": "TAPE",
+      "length": 4,
+      "definition": "A tape is a storage medium consisting of a long, narrow strip of magnetizable material, typically made of plastic. Data is stored on the tape by magnetizing specific areas of the material. Tapes are used for long-term storage of data and are often used in backup and archival systems. They can also be used for data transfer between systems, although this is less common today due to the availability of faster and more reliable data transfer methods such as USB drives and network connections."
+    },
+    {
+      "id": 165,
+      "name": "TEST",
+      "length": 4,
+      "definition": "An activity in which a system or component is executed under specified conditions, the results are observed or recorded and an evaluation is made of some aspect of the system or component. Test plan is the documentation specifying the scope, approach, resources, and schedule of intended testing activities. It identifies test items, the features to be tested, the testing tasks, responsibilities, required, resources, and any risks requiring contingency planning. Test procedure is a formal document developed from a test plan that presents detailed instructions for the setup, operation, and evaluation of the results for each defined test. See: test case. Test report is a document describing the conduct and results of the testing carried out for a system or system component."
+    },
+    {
+      "id": 168,
+      "name": "TIME",
+      "length": 4,
+      "definition": "Time is an important factor that refers to the duration of various processes involved in software development life cycle such as planning, coding, testing, deployment, and maintenance. Time management is critical to ensure that software projects are delivered on schedule and within budget. It is essential to accurately estimate the time required for each phase of the project, as well as to ensure that the project team adheres to the established timelines. Time constraints may also play a role in the selection of software development methodologies, such as agile or waterfall, as each has its own approach to managing time and resources."
+    },
+    {
+      "id": 175,
+      "name": "UNIT",
+      "length": 4,
+      "definition": "(1) A separately testable element specified in the design of a computer software element. (2) A logically separable part of a computer program. Syn: component, module."
+    },
+    {
+      "id": 178,
+      "name": "USER",
+      "length": 4,
+      "definition": "An user is an individual or system that interacts with a software application or system to accomplish a specific task. The user can be a human or another system that is connected to the software through an application programming interface (API). The design and development of software systems must take into consideration the needs, preferences, and limitations of the users to create a user-friendly and efficient product. The user experience (UX) and user interface (UI) design are essential components of the software development process to ensure that the users can easily navigate and interact with the system."
+    },
+    {
+      "id": 191,
+      "name": "WORD",
+      "length": 4,
+      "definition": "Word in the context of development is a unit of data that is a fixed number of bits long and is processed as a single entity by a computer's CPU or other components. The size of a word can vary depending on the architecture of the computer system, but it typically ranges from 16 to 64 bits. Words are used in a variety of ways within a computer system, such as to represent instructions, memory addresses, or data values. Additionally, in programming, 'word' can refer to a sequence of characters that is treated as a single unit, often delimited by spaces or other characters."
+    },
+    {
+      "id": 192,
+      "name": "WORM",
+      "length": 4,
+      "definition": "A worm is a type of malicious software (malware) that is self-replicating and can spread through computer networks. Worms typically exploit vulnerabilities in software or operating systems to gain access to a computer, and then use that access to replicate themselves and spread to other computers on the network. Unlike viruses, worms do not need to attach themselves to a specific file or program in order to spread. Worms can be highly damaging to computer systems and networks, as they can consume large amounts of network bandwidth, overload servers, and cause system crashes. They can also be used for malicious purposes, such as stealing sensitive information or launching cyber attacks."
+    },
+    {
+      "id": 203,
+      "name": "JSON",
+      "length": 4,
+      "definition": "JSON (JavaScript Object Notation) is a lightweight data interchange format used for transmitting and storing data. It is a text format that is easy to read and write, and it is often used to exchange data between a server and a web application, as an alternative to XML. JSON is based on a subset of the JavaScript programming language and is a popular choice for representing data structures in web applications because it is easy to parse and generate. JSON data consists of key-value pairs, where the key is always a string, and the value can be a string, number, boolean, null, array, or another JSON object."
+    },
+    {
+      "id": 204,
+      "name": "HTML",
+      "length": 4,
+      "definition": "HTML stands for Hypertext Markup Language. It is a markup language used for creating web pages and applications. HTML is the standard language used to create web pages, and it provides a set of elements that are used to define the structure and content of a web page. HTML tags are used to mark up the content of a web page and indicate the meaning of different parts of the content. HTML files can be created using a text editor or specialized HTML editors, and they are typically saved with a .html or .htm file extension. HTML is the foundation of web development and is used in conjunction with other technologies such as CSS and JavaScript to create dynamic and interactive web applications."
+    },
+    {
+      "id": 208,
+      "name": "RUBY",
+      "length": 4,
+      "definition": "Ruby is a high-level, interpreted programming language that is designed for simplicity and productivity. It was created in the mid-1990s by Yukihiro 'Matz' Matsumoto in Japan. Ruby is known for its clean syntax and object-oriented programming features, which make it easy to write and understand code. It is also an open-source language, with a large community of developers contributing to its development and maintenance. One of the key features of Ruby is its use of dynamic typing, which allows developers to write code without worrying about variable types. Ruby also has a garbage collector that automatically manages memory, making it easier for developers to write code that is less prone to memory leaks and other memory-related issues."
+    }
+  ],
+  "5": [
+    {
+      "id": 5,
+      "name": "ARRAY",
+      "length": 5,
+      "definition": "An n-dimensional ordered set of data items identified by a single name and one or more indices, so that each element of the set is individually addressable; e.g., a matrix, table, or vector."
+    },
+    {
+      "id": 8,
+      "name": "ASYNC",
+      "length": 5,
+      "definition": "The async function declaration declares an async function where the await keyword is permitted within the function body. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains."
+    },
+    {
+      "id": 9,
+      "name": "AUDIT",
+      "length": 5,
+      "definition": "To conduct an independent review and examination of system records and activities in order to test the adequacy and effectiveness of data security and data integrity procedures, to ensure compliance with established policy and operational procedures, and to recommend any necessary changes. See: computer system audit, software audit."
+    },
+    {
+      "id": 13,
+      "name": "BASIC",
+      "length": 5,
+      "definition": "An acronym for Beginners All-purpose Symbolic Instruction Code, a high-level programming language intended to facilitate learning to program in an interactive environment."
+    },
+    {
+      "id": 14,
+      "name": "BATCH",
+      "length": 5,
+      "definition": "Pertaining to a system or mode of operation in which inputs are collected and processed all at one time, rather than being processed as they arrive, and a job, once started, proceeds to completion without additional input or user interaction. Contrast with conversational, interactive, on-line, real time."
+    },
+    {
+      "id": 20,
+      "name": "BLOCK",
+      "length": 5,
+      "definition": "(1) A string of records, words, or characters that for technical or logical purposes are treated as a unity. (2) A collection of contiguous records that are recorded as a unit, and the units are separated by interblock gaps. (3) A group of bits or digits that are transmitted as a unit and that may be encoded for error-control purposes. (4) In programming languages, a subdivision of a program that serves to group related statements, delimit routines, specify storage allocation, delineate the applicability of labels, or segment parts of the program for other purposes. In FORTRAN, a block may be a sequence of statements; in COBOL, it may be a physical record."
+    },
+    {
+      "id": 24,
+      "name": "AGILE",
+      "length": 5,
+      "definition": "Agile software development is an iterative and incremental approach to software development that emphasizes flexibility, collaboration, and customer satisfaction. It involves breaking down the development process into smaller, more manageable segments called sprints or iterations, which are typically two to four weeks long. The agile approach emphasizes delivering working software early and often, with frequent feedback from the customer or end-user. This allows for changes to be made quickly and easily, ensuring that the final product meets the customer's needs and expectations."
+    },
+    {
+      "id": 33,
+      "name": "CLOCK",
+      "length": 5,
+      "definition": "A device that generates periodic, accurately spaced signals used for such purposes as timing, regulation of the operations of a processor, or generation of interrupts."
+    },
+    {
+      "id": 34,
+      "name": "COBOL",
+      "length": 5,
+      "definition": "COBOL (Common Business Oriented Language) is a high-level programming language designed for business applications, particularly those involving large-scale data processing. COBOL was first developed in the late 1950s and quickly became popular in the business world due to its ability to handle large amounts of data and its English-like syntax, which made it easy to read and write. COBOL was widely used in mainframe computer systems throughout the 1960s and 1970s, and many legacy systems today still rely on COBOL code. Despite its age, COBOL remains an important language in business and government sectors, and efforts are ongoing to modernize and update COBOL code for use in modern computing environments."
+    },
+    {
+      "id": 39,
+      "name": "CLOUD",
+      "length": 5,
+      "definition": "The term 'cloud' refers to a computing environment where resources, such as servers, storage, databases, and software applications, are provided as a service over the internet. Cloud computing allows developers to build and deploy applications without having to manage physical hardware, software, or infrastructure. In a cloud environment, developers can access resources on-demand, pay only for what they use, and scale their applications as needed. This model eliminates the need for developers to maintain and manage their own servers, storage, and networking infrastructure, and allows them to focus on writing and deploying their applications. Some popular cloud platforms used in development include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). These platforms offer a range of services, such as virtual machines, containers, serverless computing, and data storage, that developers can use to build, test, and deploy their applications in the cloud."
+    },
+    {
+      "id": 44,
+      "name": "STACK",
+      "length": 5,
+      "definition": "(1) A stack is a data structure that stores and organizes information. It is a last-in, first-out (LIFO) data structure, which means that the last item added to the stack is the first item to be removed. A stack consists of two main operations: Push: This operation adds an item to the top of the stack. When an item is pushed onto the stack, it becomes the new top element. Pop: This operation removes the top item from the stack. When an item is popped from the stack, the next item in the stack becomes the new top element. (2) When we talk about 'stack' in the context of software development technologies, we are usually referring to the combination of programming languages, frameworks, libraries, and tools used to build a software application."
+    },
+    {
+      "id": 47,
+      "name": "CRASH",
+      "length": 5,
+      "definition": "A crash refers to an unexpected failure of a program or system. When a program crashes, it stops working and may display an error message or cause the entire system to freeze or shut down. Crashes can be caused by a variety of factors, such as: bugs in the code, memory issues, hardware or system issues or environmental factors."
+    },
+    {
+      "id": 60,
+      "name": "DRIFT",
+      "length": 5,
+      "definition": "Drift refers to a system or component becoming out of sync with its intended state over time due to various factors. This can have negative effects on the system's performance, reliability, and maintenance. Strategies such as automated configuration management and continuous monitoring can help mitigate drift."
+    },
+    {
+      "id": 63,
+      "name": "CACHE",
+      "length": 5,
+      "definition": "A cache is a mechanism for storing frequently accessed data in a temporary storage location, such as a high-speed memory or disk, to improve system performance. When a requested data or resource is found in the cache, the system can access it much faster than if it had to retrieve it from a slower storage location, such as a database or network drive. Caching is used in a variety of software systems, including web applications, databases, and operating systems, to reduce latency and improve overall system performance."
+    },
+    {
+      "id": 67,
+      "name": "ERROR",
+      "length": 5,
+      "definition": "An error refers to a mistake or flaw in code or other software artifacts that causes a program to behave in unexpected or unintended ways. Errors can occur at any stage of the development process, from design and implementation to testing and deployment, and can result in issues such as crashes, data corruption, or security vulnerabilities. Developers use a variety of tools and techniques, such as debugging and testing, to identify and correct errors in their software. Effective error handling and reporting is also important to help users understand and recover from errors that occur during software use."
+    },
+    {
+      "id": 68,
+      "name": "EVENT",
+      "length": 5,
+      "definition": "An event refers to a trigger or notification that occurs within a system or application, often in response to a user action or system condition. Events can be user-initiated, such as clicking a button or entering data, or system-initiated, such as an error or change in data state. Event-driven programming is a programming paradigm in which software behavior is defined by events and their associated handlers, allowing for flexible and responsive systems. Events are commonly used in user interface design, system monitoring, and messaging systems, among other applications."
+    },
+    {
+      "id": 71,
+      "name": "FAULT",
+      "length": 5,
+      "definition": "Fault is a defect or error in the software system or application that causes it to deviate from its intended behavior or functionality. A fault can occur at any stage of the development process, such as design, coding, or testing. It can result from a variety of factors, such as human error, incorrect implementation of a requirement, or a flaw in the software design. Faults can lead to issues such as crashes, unexpected behavior, or incorrect results. Identifying and fixing faults is a critical part of the development process to ensure the software system or application functions correctly and meets its intended objectives."
+    },
+    {
+      "id": 72,
+      "name": "FIELD",
+      "length": 5,
+      "definition": "(1) On a data medium or in storage, a specified area used for a particular class of data; e.g., a group of character positions used to enter or display wage rates on a screen. (2) Defined logical data that is part of a record. (3) The elementary unit of a record that may contain a data item, a data aggregate, a pointer, or a link. (4) A discrete location in a database that contains an unique piece of information. A field is a component of a record. A record is a component of a database."
+    },
+    {
+      "id": 80,
+      "name": "GRAPH",
+      "length": 5,
+      "definition": "A diagram or other representation consisting of a finite set of nodes and internode connections called edges or arcs. Contrast with blueprint. See: block diagram, box diagram, bubble chart, call graph, cause-effect graph, control flow diagram, data flow diagram, directed graph, flowchart, input-process-output chart, structure chart, transaction flowgraph."
+    },
+    {
+      "id": 84,
+      "name": "HERTZ",
+      "length": 5,
+      "definition": "Hertz is a unit of frequency that measures the number of cycles or oscillations per second in a periodic waveform, such as an electrical signal or sound wave. It is named after Heinrich Hertz, a German physicist who first demonstrated the existence of electromagnetic waves in the late 19th century. Hertz is commonly used to express the frequency of computer processors, electronic devices, and communication systems, as well as the frequency of sound waves and radio waves. For example, a computer processor with a clock speed of 2.5 GHz (gigahertz) can perform 2.5 billion cycles per second. The hertz is part of a series of units for measuring frequency that includes kilohertz (kHz), megahertz (MHz), and gigahertz (GHz)."
+    },
+    {
+      "id": 85,
+      "name": "INPUT",
+      "length": 5,
+      "definition": "Input is any data or information that is entered into a computer system or application for processing, manipulation, or storage. Input can take many forms, such as text, numbers, images, audio, or video, and can be entered using a variety of input devices, including keyboards, mice, touchscreens, and microphones. The input is typically processed by software applications or programs, which perform various operations on the input data, such as sorting, searching, filtering, or transforming it into output data. Input is a critical component of most computer systems and applications, and its accuracy, completeness, and consistency are essential to ensure the correct functioning of the software and the quality of the output data."
+    },
+    {
+      "id": 98,
+      "name": "MACRO",
+      "length": 5,
+      "definition": "A predefined sequence of computer instructions that is inserted into a program, usually during assembly or compilation, at each place that its corresponding macroinstruction appears in the program."
+    },
+    {
+      "id": 108,
+      "name": "MODEM",
+      "length": 5,
+      "definition": "A modem (short for modulator-demodulator) is a device that converts digital signals from a computer or other digital device into analog signals that can be transmitted over telephone lines or other communication channels, and vice versa. Modems are commonly used to connect computers to the Internet or to other networks, and can operate over a variety of communication protocols, such as dial-up, DSL, cable, or satellite. Modems can also be used to transmit data between devices over short distances, such as in a local area network (LAN). Modems typically come in the form of external devices that can be connected to a computer or other device via a cable, or as internal components installed directly inside a computer."
+    },
+    {
+      "id": 116,
+      "name": "OCTAL",
+      "length": 5,
+      "definition": "Octal is a base-8 numeral system that uses digits from 0 to 7 to represent values. It is often used in computing systems to represent binary data in a more compact form. Each digit in an octal number represents a power of 8, starting from the rightmost digit. For example, the octal number 173 represents the decimal value 123, because 3 is in the 8^0 position, 7 is in the 8^1 position, and 1 is in the 8^2 position. Octal notation is sometimes used in programming languages to represent sets of bits or file permissions, as well as to specify memory addresses and other numerical values."
+    },
+    {
+      "id": 127,
+      "name": "PATCH",
+      "length": 5,
+      "definition": "A patch is a piece of code or a set of changes applied to a program, system, or application to fix a specific bug or issue. Patches can also include security updates, performance enhancements, or new features. A patch can be applied to a specific version or build of a software product, and it is usually distributed as a small file that contains only the changes needed to update the software. The process of applying a patch is called patching, and it can be done manually or automatically using patch management software. Patching is a critical aspect of software maintenance and helps to ensure the security, stability, and performance of a software system."
+    },
+    {
+      "id": 129,
+      "name": "PIXEL",
+      "length": 5,
+      "definition": "(1) In image processing and pattern recognition, the smallest element of a digital image that can be assigned a gray level. (2) In computer graphics, the smallest element of a display surface that can be assigned independent characteristics. This term is derived from the term 'picture element'."
+    },
+    {
+      "id": 135,
+      "name": "PROOF",
+      "length": 5,
+      "definition": "Proof refers to the process of verifying that a piece of software or hardware works correctly, or that a design is sound and meets the desired requirements. This can involve various techniques, such as testing, debugging, and formal verification methods. The goal of proof is to ensure that the final product is reliable, robust, and meets the intended specifications. Proof can also refer to the evidence or documentation that demonstrates that the development process followed certain standards or guidelines. This may be required for regulatory or compliance purposes, or simply as a best practice to ensure quality and accountability."
+    },
+    {
+      "id": 138,
+      "name": "RANGE",
+      "length": 5,
+      "definition": "Range is a set of values within a specified interval. This interval can be defined by a starting value and an ending value, with all the values between them included in the range. Ranges are commonly used in programming to represent a sequence of values or to perform operations on a specific subset of values within a larger set. Some programming languages offer built-in functions or libraries for working with ranges."
+    },
+    {
+      "id": 155,
+      "name": "STATE",
+      "length": 5,
+      "definition": "State refers to the condition or status of an object, application, or system at a particular point in time. The state of an object is usually determined by the values of its properties or attributes, which can change over time. Managing and maintaining state is an important part of developing software applications, as it can impact the behavior and functionality of the program. Various techniques and patterns can be used to manage state in software development, such as state machines, event-driven programming, and reactive programming."
+    },
+    {
+      "id": 167,
+      "name": "TOKEN",
+      "length": 5,
+      "definition": "A token is a piece of data that represents a user's identity or authorization to access a particular resource or system. Tokens are commonly used in web development and APIs as a way to authenticate and authorize users."
+    },
+    {
+      "id": 170,
+      "name": "TRACE",
+      "length": 5,
+      "definition": "Trace is the process of recording or tracking the flow of data or events within a system. This can be useful for identifying issues or bugs in the software, as well as for understanding how the system is functioning overall. Traces can be created manually through the use of logging or debugging tools, or automatically through specialized software designed for this purpose. The resulting trace data can then be analyzed to help diagnose and resolve problems within the software."
+    },
+    {
+      "id": 180,
+      "name": "VALID",
+      "length": 5,
+      "definition": "Valid means that something is correctly formatted, conforms to a specified standard, or meets a set of requirements. For example, data entered into a form might be considered 'valid' if it contains the required information in the correct format. A software feature might be considered 'valid' if it meets the specifications outlined in its requirements document. In general, the term 'valid' in software development implies that something has been tested or verified to ensure that it works correctly and meets the necessary criteria."
+    },
+    {
+      "id": 187,
+      "name": "VIRUS",
+      "length": 5,
+      "definition": "A virus is a type of malicious software that is designed to replicate itself and spread from one computer to another, often with harmful effects. Once a virus has infected a computer, it can interfere with the system's normal functioning, damage files or programs, steal personal information, and cause other types of harm. Viruses can spread through email attachments, software downloads, infected websites, and other methods. It's important for computer users to use antivirus software and be cautious when opening files or clicking links, in order to prevent virus infections."
+    },
+    {
+      "id": 199,
+      "name": "REACT",
+      "length": 5,
+      "definition": "React is an open-source JavaScript library used for building user interfaces or UI components. It was developed by Facebook and is widely used by developers to create single-page applications and mobile applications. React allows developers to create reusable UI components and manage their state independently, making it easier to build complex and interactive UIs. It uses a declarative approach to building UI components, meaning developers only need to specify what should be displayed, and React takes care of rendering the UI efficiently. React also makes use of a virtual DOM, which allows for efficient updates and minimizes the number of actual DOM manipulations needed."
+    },
+    {
+      "id": 200,
+      "name": "QUERY",
+      "length": 5,
+      "definition": "A query is a request for specific information or data from a database. It is a request that is sent to the database management system (DBMS) in a structured format, typically in the form of a command written in SQL (Structured Query Language). Queries can be used to retrieve data from a database, filter the data based on certain criteria, sort the data in a specific order, group the data based on specific fields, and perform various other operations on the data. Queries can be very simple, such as retrieving all records from a single table, or very complex, involving multiple tables and conditions. Queries are a fundamental part of working with databases, and are used in many different types of software applications, including web applications, desktop applications, and mobile apps."
+    },
+    {
+      "id": 206,
+      "name": "DEBUG",
+      "length": 5,
+      "definition": "Debugging is the process of finding and resolving errors or bugs within a computer program. Debugging is an essential part of the software development process as it helps developers identify and fix issues that can cause software to behave unexpectedly or not work as intended. There are various techniques and tools that developers use for debugging, including print statements, step-by-step execution, breakpoints, memory dumps, and code profilers. The goal of debugging is to identify the root cause of the problem and fix it, thereby improving the quality and reliability of the software."
+    },
+    {
+      "id": 217,
+      "name": "CLASS",
+      "length": 5,
+      "definition": "In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods). The class defines the structure and behavior of an object, which can be instantiated (created as an instance of the class) and interacted with by the program. Classes can have properties, which represent data or state associated with the object, and methods, which represent the behavior or actions that the object can perform. They can also be organized into hierarchies of parent and child classes, with child classes inheriting properties and methods from their parents. Classes are a fundamental concept in object-oriented programming and are used extensively in many programming languages, including Java, C++, Python, and Ruby. They provide a way to encapsulate data and behavior, making it easier to manage and maintain complex software systems."
+    },
+    {
+      "id": 219,
+      "name": "CRAWL",
+      "length": 5,
+      "definition": "In software development, 'crawl' refers to the process of systematically and automatically searching through a website or web application to gather information or data. This is often done by using specialized software called web crawlers or spiders, which are programmed to follow links and gather data from various pages within a website. This information can then be used for a variety of purposes, such as web indexing, data mining, or search engine optimization. The process of crawling can be complex, as it often involves dealing with issues like duplicate content, dynamic URLs, and complex navigation structures. As such, it requires a solid understanding of web development and programming, as well as specialized tools and techniques."
+    }
+  ],
+  "6": [
+    {
+      "id": 18,
+      "name": "BINARY",
+      "length": 6,
+      "definition": "Describes a numbering scheme in which there are only two possible values for each digit -- 0 or 1 -- and is the basis for all binary code used in computing systems. It refers to any digital encoding/decoding system in which there are exactly two possible states. In digital data memory, storage, processing and communications, the 0 and 1 values are sometimes called low and high, respectively. In transistors, 1 refers to a flow of electricity, while 0 represents no flow of electricity."
+    },
+    {
+      "id": 27,
+      "name": "BRANCH",
+      "length": 6,
+      "definition": "A branch is a separate version of the same code base. Like a branch on a tree, a branch in Git shares the same trunk as other branches, but is an individual. With branches, the two programmers can work on separate versions of the same website without interfering with each other."
+    },
+    {
+      "id": 28,
+      "name": "BUFFER",
+      "length": 6,
+      "definition": "A device or storage area [memory] used to store data temporarily to compensate for differences in rates of data flow, time of occurrence of events, or amounts of data that can be handled by the devices or processes involved in the transfer or use of the data."
+    },
+    {
+      "id": 32,
+      "name": "CLIENT",
+      "length": 6,
+      "definition": "A server is a computer program or device that provides a service to another computer program and its user, also known as the client. In a data center, the physical computer that a server program runs on is also frequently referred to as a server."
+    },
+    {
+      "id": 36,
+      "name": "CODING",
+      "length": 6,
+      "definition": "(1) In software engineering, the process of expressing a computer program in a programming language. (2) The transforming of logic and data from design specifications (design descriptions) into a programming language."
+    },
+    {
+      "id": 48,
+      "name": "CURSOR",
+      "length": 6,
+      "definition": "(1) A movable, visible mark used to indicate a position of interest on a display surface. (2) A cursor is an object or data structure used to traverse through a set of data, typically within a database. A cursor allows developers to perform various operations on the data, such as selecting, updating, or deleting records. Cursors are commonly used in database management systems, where they provide a way to move through the result set of a query and manipulate individual records. Cursors can be used to iterate through a single table or join multiple tables together."
+    },
+    {
+      "id": 54,
+      "name": "DEFECT",
+      "length": 6,
+      "definition": "A defect is a flaw or issue in the software code that causes it to behave in an unintended way. It is also commonly referred to as a bug or an error. Defects can occur at any stage of the software development lifecycle, from requirements gathering to coding, testing, and deployment."
+    },
+    {
+      "id": 56,
+      "name": "DESIGN",
+      "length": 6,
+      "definition": "The process of defining the architecture, components, interfaces, and other characteristics of a system or component. See: architectural design, preliminary design, detailed design."
+    },
+    {
+      "id": 61,
+      "name": "DRIVER",
+      "length": 6,
+      "definition": "A driver is a specialized software component that enables communication between a computer system and a hardware device or peripheral. Drivers are essential for hardware devices to function properly, and developers must consider them when designing and implementing software applications that interact with hardware."
+    },
+    {
+      "id": 66,
+      "name": "ENTITY",
+      "length": 6,
+      "definition": "An entity is an object or concept that is represented within a system, often in the form of a database table or class. Entities can represent physical objects, such as customers, products, or orders, as well as abstract concepts, such as user roles or permissions. Entities typically have properties or attributes that define their characteristics, such as name, ID, or status, and can be related to other entities through relationships or associations. Entities are a fundamental concept in many software development paradigms, including object-oriented programming and relational database design."
+    },
+    {
+      "id": 83,
+      "name": "HAZARD",
+      "length": 6,
+      "definition": "Hazard is a potential danger or risk that can arise from the operation or use of a software system or application. Hazards can take many forms, including security vulnerabilities, data loss or corruption, system crashes or failures, and user errors or misuse. Hazards can occur at any stage of the development process, from design and coding to testing and deployment, and can result from a variety of factors, including programming errors, inadequate testing, incorrect or incomplete specifications, and system or environmental factors. The identification and mitigation of hazards is a critical aspect of software development, and is typically addressed through risk management and quality assurance processes."
+    },
+    {
+      "id": 91,
+      "name": "KERMIT",
+      "length": 6,
+      "definition": "Kermit is a computer network protocol and file transfer protocol that is used for the transfer of files and data between computers. It was developed by Columbia University in the early 1980s and is named after the popular Muppet character, Kermit the Frog. Kermit supports a wide range of transfer modes, including text and binary, as well as a variety of error-checking and recovery mechanisms to ensure the reliable transmission of data over noisy or unreliable network connections. Kermit is often used in conjunction with terminal emulator software to connect to remote computers and transfer files between them. Although Kermit is less commonly used today, it was an important protocol in the early days of computer networking and helped to establish many of the standards and best practices that are still used in modern network protocols."
+    },
+    {
+      "id": 96,
+      "name": "LOADER",
+      "length": 6,
+      "definition": "A loader is a program or software component that is responsible for loading and executing other programs or software modules into memory for execution. It is a key part of the process of launching and running computer programs. Loaders typically perform tasks such as resolving dependencies, linking object files, allocating memory, and initializing program data. They may also perform security checks to ensure that the loaded program is safe to execute. Loaders are used in a variety of contexts, including operating systems, application development, and web development. They play a critical role in ensuring that software is loaded and executed correctly and efficiently."
+    },
+    {
+      "id": 103,
+      "name": "MEMORY",
+      "length": 6,
+      "definition": "Memory refers to any device or medium used for storing binary data. There are two types: primary (directly accessed by the processor, e.g., RAM, ROM) and secondary (used for long-term storage, e.g., HDDs, SSDs). Primary memory stores data and instructions needed for fast access, while secondary memory offers larger storage capacity. Memory is critical to the functioning of digital devices, and its amount and type can impact system performance and capabilities."
+    },
+    {
+      "id": 109,
+      "name": "MODULE",
+      "length": 6,
+      "definition": "(1) In programming languages, a self- contained subdivision of a program that may be separately compiled. (2) A discrete set of instructions, usually processed as a unit, by an assembler, a compiler, a linkage editor, or similar routine or subroutine. (3) A packaged functional hardware unit suitable for use with other components."
+    },
+    {
+      "id": 112,
+      "name": "NIBBLE",
+      "length": 6,
+      "definition": "A nibble is a unit of digital information that consists of four bits, half a byte. It represents one hexadecimal digit, which can have a value between 0 and 15. Nibbles are often used in computing for data storage and manipulation, and they can be combined to form larger units of information such as bytes."
+    },
+    {
+      "id": 115,
+      "name": "OBJECT",
+      "length": 6,
+      "definition": "An object is a self-contained unit of code that contains both data and the behavior that operates on that data. Objects are instances of classes, which are templates for creating objects with predefined properties and methods. Objects can interact with each other through their methods, and they can be used to represent real-world entities, such as customers, products, or transactions, in software applications. Object-oriented programming languages, such as Java, C++, and Python, support the creation and manipulation of objects as a fundamental concept in their syntax and semantics."
+    },
+    {
+      "id": 117,
+      "name": "ONLINE",
+      "length": 6,
+      "definition": "'Online' refers to a state in which a device, system, or application is connected to a network or the internet and is actively sending or receiving data in real-time. An online system can communicate with other systems and devices instantly, enabling real-time data exchange and processing. This is in contrast to 'offline', which refers to a state where a device or system is not connected to a network or the internet and cannot transmit or receive data in real-time. Online systems are widely used in various applications such as e-commerce, social networking, online gaming, and many more."
+    },
+    {
+      "id": 119,
+      "name": "ORACLE",
+      "length": 6,
+      "definition": "Oracle is a relational database management system (RDBMS) that provides an efficient and secure way to store and manage large amounts of data. It is a powerful and widely used database software that is used to create and manage databases for various applications, such as online transaction processing (OLTP), data warehousing, and business intelligence. Oracle databases are known for their scalability, reliability, and high performance, and are used by many organizations around the world to manage their critical data. In addition to the core database software, Oracle also offers a range of tools and products for database management, development, and deployment."
+    },
+    {
+      "id": 121,
+      "name": "PAGING",
+      "length": 6,
+      "definition": "A storage allocation technique in which programs or data are divided into fixed length blocks called pages, main storage/memory is divided into blocks of the same length called page frames, and pages are stored in page frames, not necessarily contiguously or in logical order, and pages are transferred between main and auxiliary storage as needed."
+    },
+    {
+      "id": 124,
+      "name": "PARITY",
+      "length": 6,
+      "definition": "Parity is a method of error detection in digital communication systems that ensures the accuracy of transmitted data. It involves adding an extra bit, called a parity bit, to each byte of data. The parity bit is set to either 0 or 1 depending on the number of ones in the byte. For example, if the byte has an odd number of ones, the parity bit is set to 1, and if the byte has an even number of ones, the parity bit is set to 0. During transmission, the receiving device checks the parity bit to verify if the data was transmitted correctly. If the number of ones in the byte plus the parity bit is even or odd, depending on the type of parity used, the transmission is considered to be valid. If the number of ones does not match the expected parity, an error is detected, and the receiving device requests the data to be retransmitted."
+    },
+    {
+      "id": 125,
+      "name": "PASCAL",
+      "length": 6,
+      "definition": "Pascal is a high-level programming language that was designed in the late 1960s by Niklaus Wirth. It was named after the French mathematician and philosopher Blaise Pascal. Pascal was designed to encourage structured programming practices and to provide a language that was easy to learn and use. It has features such as strong typing, modular programming, and exception handling. Pascal was widely used in the 1970s and 1980s for teaching programming, as well as for developing software applications in areas such as scientific computing, engineering, and business. The language influenced the development of many other programming languages, including Delphi, Modula-2, Ada, and others. Pascal has a syntax that is similar to other languages like C and C++, but it has some unique features such as the ability to define subrange types and record types."
+    },
+    {
+      "id": 139,
+      "name": "RECORD",
+      "length": 6,
+      "definition": "A record is a data structure that stores a collection of related values, each of which is typically referred to as a field or attribute. Records are used to represent entities, such as a customer or an employee, or to organize and structure data in a way that facilitates efficient processing. Each field within a record is typically defined by a name and a data type, and the record itself is often assigned a unique identifier or key that can be used to retrieve it from a database or other data store. Records can be manipulated using programming constructs such as arrays, loops, and conditional statements."
+    },
+    {
+      "id": 141,
+      "name": "REGION",
+      "length": 6,
+      "definition": "A region is a specific portion of a computer's storage that is separate from other areas, either logically or physically. It is defined in a way that is clear and easy to understand. Regions are used to separate testing from production, which is the normal use of the system. Another word for region is partition."
+    },
+    {
+      "id": 144,
+      "name": "REVIEW",
+      "length": 6,
+      "definition": "A process or meeting during which a work product or set of work products, is presented to project personnel, managers, users, customers, or other interested parties for comment or approval. Types include code review, design review, formal qualification review, requirements review, test readiness review. Contrast with audit, inspection."
+    },
+    {
+      "id": 147,
+      "name": "SAFETY",
+      "length": 6,
+      "definition": "Safety refers to the design and implementation of systems or software with the goal of minimizing or eliminating the potential for harm or damage to people, the environment, or property. Safety considerations are particularly important in industries such as aerospace, automotive, and medical devices, where failures can have catastrophic consequences. Safety can be achieved through various measures, including the use of redundant systems, fail-safe mechanisms, thorough testing and verification processes, and adherence to industry standards and regulations."
+    },
+    {
+      "id": 148,
+      "name": "SENSOR",
+      "length": 6,
+      "definition": "Sensor is a peripheral input device or module that detects or measures a physical quantity or environmental parameter and converts it into an electrical signal or data that can be processed by a computer program. Sensors are often used in embedded systems, Internet of Things (IoT) applications, and other types of software that interact with the physical world. Common types of sensors include temperature sensors, pressure sensors, motion sensors, light sensors, and proximity sensors, among others."
+    },
+    {
+      "id": 149,
+      "name": "SERIAL",
+      "length": 6,
+      "definition": "Serial is the transmission of data one bit at a time over a communication channel or bus. This is in contrast to parallel transmission, where multiple bits are transmitted simultaneously. Serial transmission is often used in situations where there are limitations on the number of wires that can be used for communication or where longer distances need to be covered. Examples of serial communication protocols include RS-232, SPI, and I2C."
+    },
+    {
+      "id": 150,
+      "name": "SERVER",
+      "length": 6,
+      "definition": "A server is a computer or software system that provides services or resources to other computers or applications on a network. Servers are designed to be reliable, efficient, and scalable, and are often used to host websites, run databases, store and share files, manage email, and perform other critical functions for businesses and organizations. Servers can be physical machines or virtualized environments, and may be located on-premises, in a data center, or in the cloud. Servers typically run specialized software and operating systems optimized for performance and security, and are managed by IT professionals to ensure they operate smoothly and securely."
+    },
+    {
+      "id": 152,
+      "name": "SIZING",
+      "length": 6,
+      "definition": "Sizing refers to the process of estimating the amount of effort, time, and resources required to complete a software project or a specific task within a project. Sizing can be performed at various levels of granularity, such as at the project level, feature level, or task level. Sizing techniques may involve using historical data, expert judgment, and various estimation models to provide a reasonable estimate of the effort required to complete a given piece of work. Accurate sizing is important for planning and budgeting purposes, as well as for monitoring and controlling project progress."
+    },
+    {
+      "id": 154,
+      "name": "SOURCE",
+      "length": 6,
+      "definition": "Source is the original human-readable version of a computer program that is written in a programming language. This source code is then translated into machine-readable code through a process called compilation, and executed by the computer to perform the desired task. Source code can be modified and improved upon by developers, allowing for flexibility and customization in software development. Access to source code is often restricted and tightly controlled in proprietary software, while open-source software makes its source code freely available for others to modify and distribute."
+    },
+    {
+      "id": 162,
+      "name": "SYNTAX",
+      "length": 6,
+      "definition": "Syntax is  theset of rules that govern how statements are constructed in a particular programming language. These rules determine the correct order and format for keywords, punctuation, and other elements used to build computer programs. A program written with correct syntax is said to be 'syntactically correct', meaning that it adheres to the rules of the language and can be compiled or executed without errors. In contrast, a program with syntax errors will fail to compile or execute properly, and may generate error messages that indicate where the errors occurred. Therefore, understanding and following the syntax rules of a programming language is an important aspect of software development."
+    },
+    {
+      "id": 161,
+      "name": "SYSTEM",
+      "length": 6,
+      "definition": "(1) People, machines, and methods organized to accomplish a set of specific functions. (2) A composite, at any level of complexity, of personnel, procedures, materials, tools, equipment, facilities, and software. The elements of this composite entity are used together in the intended operational or support environment to perform a given task or achieve a specific purpose, support, or mission requirement."
+    },
+    {
+      "id": 169,
+      "name": "TIMING",
+      "length": 6,
+      "definition": "Time is the precise measurement and control of the execution time of a program or a specific portion of it. This can be important in real-time systems where tasks must be completed within a certain amount of time, or in high-performance computing where execution time is a critical factor in the program's overall efficiency. Timing analysis is often performed to identify performance bottlenecks and optimize code to reduce execution time. Techniques such as profiling and benchmarking can be used to measure timing and identify areas for improvement."
+    },
+    {
+      "id": 171,
+      "name": "TROJAN",
+      "length": 6,
+      "definition": "Trojan horse is a method of attacking a computer system, typically by providing a useful program which contains code intended to compromise a computer system by secretly providing for unauthorized access, the unauthorized collection of privileged system or user data, the unauthorized reading or altering of files, the performance of unintended and unexpected functions, or the malicious destruction of software and hardware."
+    },
+    {
+      "id": 172,
+      "name": "NEURON",
+      "length": 6,
+      "definition": "A neuron is a computational unit that is used in artificial neural networks (ANNs) to process and transmit information. ANNs are a type of machine learning algorithm inspired by the structure and function of the human brain, and they are used in a wide range of applications, such as image and speech recognition, natural language processing, and more."
+    },
+    {
+      "id": 173,
+      "name": "TUNING",
+      "length": 6,
+      "definition": "Tuning is the process of optimizing the performance of a system or application. It involves identifying and addressing bottlenecks that can slow down the software and cause delays or other problems. Tuning may involve adjusting various system parameters, modifying code, or adding hardware resources to improve performance. The goal of tuning is to achieve optimal performance while balancing the resources used by the system or application."
+    },
+    {
+      "id": 183,
+      "name": "VENDOR",
+      "length": 6,
+      "definition": "A vendor is a person, company or entity that provides software products or services to customers. A vendor typically develops software and sells licenses to customers or provides support and maintenance services. Vendors may also provide hardware or other related services, such as consulting, training or implementation assistance. Vendors are an important part of the software development ecosystem, as they provide businesses with access to the tools and services they need to build and maintain their software systems."
+    },
+    {
+      "id": 184,
+      "name": "VERIFY",
+      "length": 6,
+      "definition": "Verify means to check whether the software meets the specified requirements and is free from defects. The process of verification involves reviewing and testing the software to ensure that it behaves as expected and meets the design specifications. This includes checking whether the software functions correctly, is reliable and performs well, is secure and maintainable, and meets other quality requirements. Verification is usually done through a combination of manual and automated testing techniques."
+    },
+    {
+      "id": 188,
+      "name": "VOLUME",
+      "length": 6,
+      "definition": "Volume is a logical storage unit that can be used to store data, files, or other resources. A volume can be located on a physical device such as a hard disk, but it can also be created and managed in software. Volumes are often used in the context of virtualization to provide virtual machines with a dedicated storage space that can be accessed independently of the underlying physical hardware. In addition, volumes can be used to organize data and applications by grouping related resources together."
+    },
+    {
+      "id": 198,
+      "name": "SCHEMA",
+      "length": 6,
+      "definition": "A schema is a blueprint or a plan that outlines the structure, organization, and constraints of data in a database or information system. It defines the rules and relationships between different data elements and how they are organized and stored in the database. The schema includes information such as the data types, constraints, relationships between tables, and other metadata required for the database to function properly. Schemas can be defined using various modeling languages such as Entity-Relationship (ER), Unified Modeling Language (UML), and others. A well-designed schema is essential for efficient data management, ensuring data integrity, and enabling easier data retrieval and analysis."
+    },
+    {
+      "id": 201,
+      "name": "PLUGIN",
+      "length": 6,
+      "definition": "A plugin is a software component that adds a specific feature or functionality to an existing application or system. Plugins are designed to be easily installed and integrated into the target system, often through a standardized interface or API. A plugin typically provides a specific set of functions or services that can be used by the application or system that hosts it. These functions may be related to user interface, data management, or other application-specific tasks. One of the main advantages of using plugins is that they can be developed and maintained separately from the main application, allowing developers to create new features without modifying the core codebase. This can make it easier to maintain the main application and can also make it easier to extend and customize the application to meet specific needs."
+    },
+    {
+      "id": 202,
+      "name": "LAMBDA",
+      "length": 6,
+      "definition": "A lambda function is a small piece of code that can be run in a serverless architecture. It is also known as a serverless function. A lambda function can be triggered by an event and can execute a certain task. It can be used for a wide range of tasks, such as processing data, generating reports, or sending notifications. Lambda functions are often used in combination with other cloud services to build scalable and flexible applications. They are usually designed to be stateless and can be easily managed and deployed."
+    },
+    {
+      "id": 207,
+      "name": "GITHUB",
+      "length": 6,
+      "definition": "GitHub is a web-based platform for version control and collaboration that allows developers to work on projects together and keep track of code changes. It provides features like source code management, issue tracking, project management, and collaboration tools. Users can create and manage their own repositories, as well as contribute to others' repositories by submitting pull requests or opening issues. GitHub also provides various integrations with other tools and services, making it a popular choice for many software development teams."
+    },
+    {
+      "id": 209,
+      "name": "DJANGO",
+      "length": 6,
+      "definition": "Django is a high-level web framework written in Python that allows developers to quickly build complex, database-driven web applications. It provides a set of tools and abstractions that help developers focus on writing their application's business logic rather than dealing with lower-level details like handling HTTP requests and responses or managing database connections. Django includes built-in support for common web development tasks such as URL routing, form handling, authentication and authorization, and database migrations. Additionally, it has a strong and active community of developers, which provides a wealth of third-party packages and extensions that can be used to add additional functionality to Django applications. Overall, Django is a popular choice for building scalable and maintainable web applications."
+    },
+    {
+      "id": 211,
+      "name": "SPRING",
+      "length": 6,
+      "definition": "Spring is an open-source framework for building Java applications. It provides a comprehensive programming and configuration model for building modern Java-based enterprise applications. Spring aims to simplify the development of Java applications, making them easier to build, test, and deploy. The framework is built on the principle of inversion of control (IoC), which means that objects are not created by the application code, but rather by a framework that manages the objects' lifecycle. Spring also provides support for aspect-oriented programming (AOP), allowing developers to modularize cross-cutting concerns such as security, logging, and transactions. Spring is highly modular and provides a wide range of features, including support for web applications, messaging, data access, and integration with other Java frameworks. It is widely used in enterprise applications and is known for its flexibility, scalability, and ease of use."
+    },
+    {
+      "id": 212,
+      "name": "PYTHON",
+      "length": 6,
+      "definition": "Python is an interpreted, high-level, general-purpose programming language. Created in the late 1980s, it has become one of the most popular languages for web development, data analysis, artificial intelligence, scientific computing, and more. Python emphasizes code readability, simplicity, and expressiveness, which makes it easy to write, read, and maintain code. It has a large standard library, extensive third-party libraries, and a vibrant community that contributes to the language's development and improvement. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming, and has a variety of tools and frameworks that make development faster and more efficient."
+    },
+    {
+      "id": 220,
+      "name": "DEVOPS",
+      "length": 6,
+      "definition": "DevOps is a software development methodology that emphasizes collaboration and communication between software developers and IT professionals, with the goal of automating infrastructure and workflows, and increasing the speed and efficiency of software delivery. DevOps is rooted in the Agile methodology and extends it to include operations and maintenance. It aims to break down the traditional barriers between development and operations, enabling teams to work together more effectively and efficiently. DevOps combines continuous integration (CI) and continuous delivery (CD) to enable teams to release code faster and more frequently. CI involves developers frequently merging code changes into a shared repository, which is then automatically built and tested to ensure it's functioning properly. CD then automates the process of deploying this code to production, allowing teams to release new features and updates more quickly and reliably."
+    },
+    {
+      "id": 221,
+      "name": "DOMAIN",
+      "length": 6,
+      "definition": "A domain refers to the human-readable name that is used to identify a website on the internet. It is essentially the address of the website that a user types into their browser's address bar to access the website. A domain name is made up of two parts - the actual domain name and the top-level domain (TLD). For example, in the domain name 'google.com', 'google' is the actual domain name and '.com' is the TLD.Domain names are registered through domain registrars, which are companies that manage the reservation of domain names. Once a domain name is registered, it can be used to host a website and associated email accounts."
+    },
+    {
+      "id": 225,
+      "name": "WIDGET",
+      "length": 6,
+      "definition": "A widget typically refers to a small, reusable graphical user interface (GUI) component or control that displays information or provides functionality within a larger application or system. Widgets are often designed to be modular, easy to use, and customizable, allowing developers to add them to their applications and configure them according to their specific needs. Widgets can be used for a variety of purposes, such as displaying data in real-time, providing navigation controls, or enabling user interaction."
+    }
+  ],
+  "7": [
+    {
+      "id": 1,
+      "name": "ADDRESS",
+      "length": 7,
+      "definition": "(1) A number, character, or group of characters which identifies a given device or a storage location which may contain a piece of data or a program step. (2) To refer to a device or storage location by an identifying number, character, or group of characters."
+    },
+    {
+      "id": 3,
+      "name": "ANOMOLY",
+      "length": 7,
+      "definition": "Anything observed in the documentation or operation of software that deviates from expectations based on previously verified software products or reference documents. See: bug, defect, error, exception, fault."
+    },
+    {
+      "id": 4,
+      "name": "ARCHIVE",
+      "length": 7,
+      "definition": "A lasting collection of computer system data or other records that are in long term storage."
+    },
+    {
+      "id": 23,
+      "name": "BOOLEAN",
+      "length": 7,
+      "definition": "Pertaining to the principles of mathematical logic developed by George Boole, a nineteenth century mathematician. Boolean algebra is the study of operations carried out on variables that can have only one of two possible values; i.e., 1 (true) and 0 (false). As ADD, SUBTRACT, MULTIPLY, and DIVIDE are the primary operations of arithmetic, AND, OR, and NOT are the primary operations of Boolean Logic. In Pascal a boolean variable is a variable that can have one of two possible values, true or false."
+    },
+    {
+      "id": 37,
+      "name": "COMMENT",
+      "length": 7,
+      "definition": "(1) In programming languages, a language construct that allows [explanatory] text to be inserted into a program and that does not have any effect on the execution of the program. (2) Information embedded within a computer program, job control statements, or a set of data, that provides clarification to human readers but does not affect machine interpretation."
+    },
+    {
+      "id": 53,
+      "name": "DEFAULT",
+      "length": 7,
+      "definition": "A standard setting or state to be taken by the program if no alternate setting or state is initiated by the system or the user. A value assigned automatically if one is not given by the user."
+    },
+    {
+      "id": 58,
+      "name": "DIGITAL",
+      "length": 7,
+      "definition": "Digital refers to the use of electronic technology and data to create, store, and manipulate information. The term digital is often used interchangeably with the term electronic, and refers to the use of computers, software applications, and other digital tools and technologies to perform various tasks and processes."
+    },
+    {
+      "id": 62,
+      "name": "EDITING",
+      "length": 7,
+      "definition": "Editing refers to the process of modifying and revising source code or other files that are used to create software applications. Editing can involve making changes to the syntax, logic, and structure of the code to improve functionality, fix errors, or add new features. The goal of editing is to produce code that is well-written, maintainable, and meets the requirements of the software application."
+    },
+    {
+      "id": 70,
+      "name": "FAILURE",
+      "length": 7,
+      "definition": "Failure is the inability of a software system or application to meet its intended objectives or requirements. It can occur at any stage of the development process, from planning and design to implementation and deployment. Failure can result from a variety of factors, such as inadequate planning or testing, poor design or coding practices, unexpected errors or bugs, or user errors or misuse. Failure can lead to a range of negative consequences, such as lost productivity, wasted resources, decreased user satisfaction, and even reputational damage. It is important to identify and address failures as early as possible in the development process to minimize their impact and ensure the success of the project."
+    },
+    {
+      "id": 77,
+      "name": "FORTRAN",
+      "length": 7,
+      "definition": "FORTRAN is a high-level programming language developed for scientific and engineering applications. The name FORTRAN stands for FORmula TRANslation, which reflects its original purpose of translating mathematical formulas into code. FORTRAN was developed by IBM in the 1950s and quickly became popular in scientific and engineering fields due to its ability to handle complex mathematical computations and its portability across different computer systems. FORTRAN is known for its efficient use of computer resources and its strong support for array and matrix operations. The language has evolved over time, with the current standard being FORTRAN 2018. Despite its age, FORTRAN remains widely used in scientific and engineering applications, particularly in fields such as physics, engineering, and climate modeling."
+    },
+    {
+      "id": 89,
+      "name": "INVALID",
+      "length": 7,
+      "definition": "(1) Invalid inputs are test data that lie outside the domain of the function the program represents. (2) These are not only inputs outside the valid range for data to be input, i.e. when the specified input range is 50 to 100, but also unexpected inputs, especially when these unexpected inputs may easily occur; e.g., the entry of alpha characters or special keyboard characters when only numeric data is valid, or the input of abnormal command sequences to a program."
+    },
+    {
+      "id": 95,
+      "name": "LATENCY",
+      "length": 7,
+      "definition": "Latency is the amount of time it takes for a computer system to respond to a request or perform an operation. It is the delay between the time when a user input is provided and the time when the system responds to that input. Latency can be caused by a variety of factors, including network delays, processing speed, and hardware limitations. In general, lower latency is desirable in computer systems, as it leads to faster response times and a better user experience. High latency can be a problem in real-time applications such as online gaming, video conferencing, or financial trading, where even small delays can have a significant impact on performance. Developers often use techniques such as caching, load balancing, and optimization to reduce latency and improve the performance of their applications."
+    },
+    {
+      "id": 97,
+      "name": "MACHINE",
+      "length": 7,
+      "definition": "A physical device or hardware component that is capable of performing computations, processing data, and executing instructions. Machines are essential for running software and performing tasks in a computer system. They can be classified into several categories based on their function, architecture, and capabilities, such as servers, desktops, laptops, mobile devices, and embedded systems. The performance and capabilities of a machine depend on factors such as its processor speed, memory capacity, storage capacity, graphics capabilities, and input/output interfaces. Developers need to consider these factors when designing and optimizing software for specific machines, in order to ensure optimal performance and compatibility."
+    },
+    {
+      "id": 100,
+      "name": "MEASURE",
+      "length": 7,
+      "definition": "A measure refers to a quantitative indicator or metric used to assess the quality, performance, or effectiveness of a software system or process. Measures can be used to track progress, identify issues, and guide decision-making throughout the software development lifecycle. Examples of measures include code complexity, test coverage, and response time. Developers can use measures to identify areas for improvement, optimize software performance, and ensure that software meets quality and performance requirements."
+    },
+    {
+      "id": 101,
+      "name": "MEGABIT",
+      "length": 7,
+      "definition": "A megabit (Mb) refers to a unit of digital information that is equal to 1,000,000 bits. It is commonly used to measure the data transfer rate of digital communication systems, such as internet connections or network bandwidth. One megabit per second (Mbps) represents the rate at which one megabit of data can be transmitted per second. Megabits are also used in storage capacity measurement, where one megabit is equal to 125,000 bytes (or 0.125 megabytes). A megabit (Mb) is 1/8 of a megabyte (MB)."
+    },
+    {
+      "id": 111,
+      "name": "NETWORK",
+      "length": 7,
+      "definition": "Network is a group of interconnected devices, such as computers, servers, and other devices, that can communicate with each other using a common protocol, such as TCP/IP. Networks can be wired or wireless, and can span a wide range of distances, from a few meters within a single room to thousands of kilometers across continents. Networks are used in software development to facilitate communication and data sharing between different devices and systems. For example, web applications rely on networks to connect users to servers, and to transmit data between the user's device and the server. Networks can also be used to connect different software components, allowing them to exchange data and work together seamlessly."
+    },
+    {
+      "id": 131,
+      "name": "POLLING",
+      "length": 7,
+      "definition": "A technique a CPU can use to learn if a peripheral device is ready to receive data or to send data. In this method each device is checked or polled in-turn to determine if that device needs service. The device must wait until it is polled in order to send or receive data. This method is useful if the device's data can wait for a period of time before being processed, since each device must await its turn in the polling scheme before it will be serviced by the processor. Contrast with interrupt."
+    },
+    {
+      "id": 133,
+      "name": "PROGRAM",
+      "length": 7,
+      "definition": "(1) A set of instructions written in a programming language that directs a computer to perform a specific task or set of tasks. (2) A software application or system designed to perform a specific function or set of functions. (3) A sequence of coded instructions that can be executed directly by a computer, without the need for human intervention. (4) The result of a process of writing, testing, and debugging software code that can be compiled and executed on a computer system. (5) A collection of related software components or modules that work together to provide a particular service or function. (6) The process of designing, writing, testing, and debugging software code in order to create a functioning software application or system. (8) A term used to refer to the entire process of software development, from initial concept and design through coding, testing, and deployment. (9) A set of instructions or guidelines for performing a specific task or set of tasks, often used in the context of technical documentation or user manuals."
+    },
+    {
+      "id": 134,
+      "name": "PROJECT",
+      "length": 7,
+      "definition": "A project is a temporary endeavor undertaken to create a unique product, service, or result. It is a planned and organized effort to achieve specific goals and objectives, typically involving multiple phases and a team of individuals with different roles and responsibilities. A software development project may involve various activities such as requirements gathering, design, coding, testing, deployment, and maintenance. Project management methodologies, such as Agile and Waterfall, are often used to plan and execute software development projects. Effective project management helps ensure that the project is completed on time, within budget, and meets the desired quality standards."
+    },
+    {
+      "id": 137,
+      "name": "QUALITY",
+      "length": 7,
+      "definition": "Quality is the overall level of excellence of a software product or service. It encompasses a range of factors, including reliability, functionality, usability, performance, security, maintainability, and compatibility. A high-quality software product or service is one that meets or exceeds the expectations of its users and stakeholders, is reliable and error-free, is easy to use and maintain, performs well, and is secure. Quality is typically assessed through testing and other quality assurance activities throughout the software development life cycle to ensure that the software meets the specified requirements and standards. QA (Quality Assurance) is the process of ensuring that software or other products meet the required quality standards before they are released to the public."
+    },
+    {
+      "id": 146,
+      "name": "ROUTINE",
+      "length": 7,
+      "definition": "Routine is a set of instructions that performs a specific task or function within a larger program. It is often referred to as a procedure, subprogram, or subroutine, and can be called from other parts of the program to perform its designated task. Routines can be written in various programming languages and can range from simple operations to complex algorithms. The use of routines can help to improve code organization, maintainability, and reusability."
+    },
+    {
+      "id": 157,
+      "name": "STORAGE",
+      "length": 7,
+      "definition": "Storage is the computer's capacity to save and retain data, programs, and files. There are several types of storage devices used in development, including hard drives, solid-state drives, USB flash drives, and memory cards. Storage can be divided into two categories: volatile and non-volatile. Volatile storage refers to temporary storage that is lost when the computer is turned off, such as the computer's RAM. Non-volatile storage refers to permanent storage that retains data even when the computer is turned off, such as hard drives or solid-state drives. Proper storage management is crucial in software development to ensure that data is saved and protected from data loss or corruption."
+    },
+    {
+      "id": 160,
+      "name": "SUPPORT",
+      "length": 7,
+      "definition": "Support refers to the activities that involve helping users of a software product to solve problems, answer questions, and troubleshoot issues. Support can be provided through various channels such as email, chat, phone, or a helpdesk system. The main goal of support is to provide assistance to users so that they can effectively use the software product and resolve any issues they encounter. Support activities may also involve providing software updates, bug fixes, and new features to ensure that the software remains functional and up-to-date. In some cases, support may be offered as a paid service or as part of a service level agreement (SLA) between the software vendor and the user."
+    },
+    {
+      "id": 166,
+      "name": "TESTING",
+      "length": 7,
+      "definition": "Testing is a process used to verify that a system, application, or individual component works as expected. This process typically involves creating test cases that check different parts of the system or application, running those tests, and verifying that the results match the expected behavior. Testing can be done at various stages of development, from unit testing of individual code modules to system testing of the entire application. The goal of testing is to find and fix errors and ensure that the software meets the requirements and expectations of its users."
+    },
+    {
+      "id": 179,
+      "name": "UTILITY",
+      "length": 7,
+      "definition": "Utility is a program or software tool that performs a specific function or set of functions, usually related to system maintenance or operation. Utilities can be used to perform tasks such as disk cleanup, data backup, file compression, system optimization, and network management. They are typically small, specialized applications that are designed to be fast, efficient, and easy to use, and can be either included as part of an operating system or installed separately by the user."
+    },
+    {
+      "id": 185,
+      "name": "VERSION",
+      "length": 7,
+      "definition": "A version is a distinct iteration of a software program that has been released for use. A version number typically includes a series of digits that indicate the release number, major version, minor version, and patch level. For example, a version number of 1.2.3 might indicate that it is the first release, second major version, third minor version, and that three patches have been applied to it. Versions are used to keep track of changes made to a program, and to help users know which version they are currently running and whether an update is available."
+    },
+    {
+      "id": 186,
+      "name": "VIRTUAL",
+      "length": 7,
+      "definition": "Virtual is something that exists only in a simulated or abstract form, rather than as a physical entity. For example, a virtual machine is a software-based emulation of a physical computer, while virtual memory refers to a system in which the operating system simulates the presence of more memory than is physically installed. Virtualization is a common technique used in modern software development to abstract and isolate software from the underlying hardware, making it more flexible, portable, and scalable."
+    },
+    {
+      "id": 197,
+      "name": "WINDOWS",
+      "length": 7,
+      "definition": "Windows is a widely used operating system developed by Microsoft Corporation. It was first released in 1985 and has since undergone several updates and revisions. Windows is known for its graphical user interface (GUI) which allows users to interact with the system through icons, menus, and windows. It is also known for its wide compatibility with hardware and software, making it a popular choice for personal and business use. Windows is available in various versions, including Windows 10, Windows 8, and Windows 7, and is used for a wide range of applications including gaming, productivity, and multimedia."
+    },
+    {
+      "id": 210,
+      "name": "EXPRESS",
+      "length": 7,
+      "definition": "Express is a popular minimalist web application framework for Node.js. It provides a robust set of features for developing web and mobile applications. Express is known for its simplicity, flexibility, and scalability, and is often used for building RESTful APIs and server-side web applications. It comes with a number of built-in middleware functions, such as routing, error handling, and static file serving, which can be easily customized and extended using third-party middleware modules. Express also supports a variety of templating engines and has a large ecosystem of plugins and modules, making it a popular choice among web developers."
+    },
+    {
+      "id": 211,
+      "name": "LARAVEL",
+      "length": 7,
+      "definition": "Laravel is a free and open-source PHP web framework that is designed to make it easier and faster to build web applications with elegant syntax and a modular structure. Laravel follows the Model-View-Controller (MVC) architectural pattern and provides a range of features that help developers write clean and maintainable code, such as built-in support for routing, database migrations, validation, and authentication. Laravel also includes a powerful command-line interface called Artisan, which provides a number of helpful commands for common tasks such as generating boilerplate code, managing database migrations, and running tests. Additionally, Laravel has a rich ecosystem of third-party packages that can be easily integrated into a project using Composer, a dependency manager for PHP."
+    },
+    {
+      "id": 214,
+      "name": "BACKEND",
+      "length": 7,
+      "definition": "The backend refers to the server-side of a web application or software that is responsible for storing and processing data. It is the part of the software that runs on the server and is not visible to the end-user. The backend consists of the application logic, database management, and server-side scripting that communicate with the front-end or client-side of the application. It also involves the handling of web requests and responses, managing authentication and authorization, and processing data. The backend can be developed using a variety of programming languages and technologies such as Java, Python, Ruby on Rails, Node.js, and PHP."
+    },
+    {
+      "id": 215,
+      "name": "BROWSER",
+      "length": 7,
+      "definition": "The backend refers to the server-side of a web application or software that is responsible for storing and processing data. It is the part of the software that runs on the server and is not visible to the end-user. The backend consists of the application logic, database management, and server-side scripting that communicate with the front-end or client-side of the application. It also involves the handling of web requests and responses, managing authentication and authorization, and processing data. The backend can be developed using a variety of programming languages and technologies such as Java, Python, Ruby on Rails, Node.js, and PHP."
+    },
+    {
+      "id": 218,
+      "name": "COOKIES",
+      "length": 7,
+      "definition": "Cookies are small pieces of data stored on a user's computer by a website. They are commonly used to track user activity, remember user preferences, and enable personalized experiences. Cookies are sent from the server to the user's browser, and then returned to the server on subsequent requests. They can be used to store information such as user login credentials, shopping cart items, and website preferences. Cookies can be set to expire after a certain period of time or when the user closes their browser. They can also be used for advertising and tracking purposes, which has led to concerns about user privacy."
+    },
+    {
+      "id": 222,
+      "name": "FAVICON",
+      "length": 7,
+      "definition": "a favicon (short for 'favorite icon') is a small icon that appears in the browser tab or address bar next to the website's name. Favicons are typically 16x16 pixels or 32x32 pixels in size and are saved in the ICO file format. They can also be in PNG or GIF format. Favicons serve as a branding tool and make it easy for users to identify and differentiate between multiple open tabs. They are also used by some mobile devices as the icon for bookmarks and home screen shortcuts."
+    }
+  ],
+  "8": [
+    {
+      "id": 12,
+      "name": "BASELINE",
+      "length": 8,
+      "definition": "A specification or product that has been formally reviewed and agreed upon, that serves as the basis for further development, and that can be changed only through formal change control procedures."
+    },
+    {
+      "id": 26,
+      "name": "BOUNDARY",
+      "length": 8,
+      "definition": "(1) A data value that corresponds to a minimum or maximum input, internal, or output value specified for a system or component. (2) A value which lies at, or just inside or just outside a specified range of valid input and output values."
+    },
+    {
+      "id": 38,
+      "name": "COMPILER",
+      "length": 8,
+      "definition": "(1) A computer program that translates programs expressed in a high-level language into their machine language equivalents. (2) The compiler takes the finished source code listing as input and outputs the machine code instructions that the computer must have to execute the program. See: assembler, interpreter, cross-assembler, cross-compiler."
+    },
+    {
+      "id": 41,
+      "name": "COMPUTER",
+      "length": 8,
+      "definition": "(1) A functional unit that can perform substantial computations, including numerous arithmetic operations, or logic operations, without human intervention during a run. (2) A functional programmable unit that consists of one or more associated processing units and peripheral equipment, that is controlled by internally stored programs, and that can perform substantial computations, including numerous arithmetic operations, or logic operations, without human intervention."
+    },
+    {
+      "id": 43,
+      "name": "CONSTANT",
+      "length": 8,
+      "definition": "A constant is a value that remains the same throughout the execution of a program. Constants are used to represent values that should not be changed during the program's execution, such as mathematical constants, configuration settings, or fixed values used in algorithms. Constants are typically defined at the beginning of a program or in a separate configuration file, and their values cannot be modified during the program's execution. This makes constants useful for ensuring that certain values remain consistent throughout the program and cannot be accidentally modified or altered."
+    },
+    {
+      "id": 46,
+      "name": "COVERAGE",
+      "length": 8,
+      "definition": "Determining and assessing measures associated with the invocation of program structural elements to determine the adequacy of a test run. Coverage analysis is useful when attempting to execute each statement, branch, path, or iterative structure in a program. Tools that capture this data and provide reports summarizing relevant information have this feature. See: testing, branch; testing, path; testing, statement."
+    },
+    {
+      "id": 50,
+      "name": "DATABASE",
+      "length": 8,
+      "definition": "A collection of interrelated data, often with controlled redundancy, organized according to a schema to serve one or more applications. The data are stored so that they can be used by different programs without concern for the data structure or organization. A common approach is used to add new data and to modify and retrieve existing data. See: archival database."
+    },
+    {
+      "id": 52,
+      "name": "DECISION",
+      "length": 8,
+      "definition": "Decision coverage is a test coverage criteria requiring enough test cases such that each decision has a true and false result at least once, and that each statement is executed at least once. Syn: branch coverage. Contrast with condition coverage, multiple condition coverage, path coverage, statement coverage."
+    },
+    {
+      "id": 65,
+      "name": "EMULATOR",
+      "length": 8,
+      "definition": "An emulator is a program that enables a computer system to simulate the behavior of another computer system or device. Emulators allow developers to test software on a different platform or operating system than it was originally designed for, and can also be used to run legacy software and hardware systems on modern hardware or software platforms. Emulators are commonly used in video game development to test games on different consoles and platforms, and in mobile app development to test apps on different devices and operating systems."
+    },
+    {
+      "id": 74,
+      "name": "FIRMWARE",
+      "length": 8,
+      "definition": "Firmware is a software that is permanently stored in a hardware device, such as a computer, mobile device, or electronic appliance. Firmware provides low-level control over the hardware and is responsible for managing the device's functions and operations. It is typically stored in read-only memory (ROM) or flash memory and is not designed to be modified or updated by the user. Firmware can control various aspects of the device's behavior, such as its startup sequence, power management, communication with other devices, and interaction with the user interface. Firmware is a critical component of many electronic devices and plays a crucial role in ensuring their proper functioning and performance."
+    },
+    {
+      "id": 78,
+      "name": "FUNCTION",
+      "length": 8,
+      "definition": "(1) A mathematical entity whose value, namely, the value of the dependent variable, depends in a specified manner on the values of one or more independent variables, with not more than one value of the dependent variable corresponding to each permissible combination of values from the respective ranges of the independent variables. (2) A specific purpose of an entity, or its characteristic action. (3) In data communication, a machine action such as carriage return or line feed."
+    },
+    {
+      "id": 79,
+      "name": "GIGABYTE",
+      "length": 8,
+      "definition": "A gigabyte (GB) is a unit of digital information storage, equal to 1,000,000,000 bytes. It is often used to measure the storage capacity of computer hard drives, flash drives, and other storage devices. A gigabyte is approximately equivalent to one billion characters of text, 250 MP3 music files, or one hour of standard-definition video. The gigabyte is part of a series of units for measuring digital information storage that includes kilobytes (KB), megabytes (MB), terabytes (TB), and petabytes (PB). The use of gigabytes as a unit of measurement has become increasingly common as the storage capacity of computer systems and devices has grown exponentially over time."
+    },
+    {
+      "id": 82,
+      "name": "HARDWARE",
+      "length": 8,
+      "definition": "Hardware is the physical components of a computer system or electronic device. This includes components such as the motherboard, CPU, memory, hard drive, power supply, monitor, keyboard, mouse, and other peripheral devices. Hardware is the tangible part of a computer system that can be seen and touched, as opposed to software, which is the intangible set of instructions and data that control the hardware. The design and functionality of hardware components are typically determined by hardware engineers, who work to ensure that the components are efficient, reliable, and compatible with other components in the system. Hardware is a critical component of computer systems and electronic devices, and plays a crucial role in determining their performance, speed, and capabilities."
+    },
+    {
+      "id": 93,
+      "name": "KILOBYTE",
+      "length": 8,
+      "definition": "A kilobyte (KB) is a unit of digital information that is equal to 1,000 bytes. It is typically used to measure the size of computer files, such as text documents, images, audio files, or software programs. Kilobytes are often used in combination with other units of digital information, such as megabytes (MB), gigabytes (GB), or terabytes (TB), to measure larger amounts of data. For example, a 1 megabyte file is equal to 1,000 kilobytes, and a 1 gigabyte file is equal to 1,000 megabytes or 1,000,000 kilobytes. The use of kilobytes and other units of digital information is essential for managing and storing large amounts of data in computer systems."
+    },
+    {
+      "id": 94,
+      "name": "LANGUAGE",
+      "length": 8,
+      "definition": "A programming language is a set of instructions and rules that are used to create computer programs or software. Programming languages are used to communicate with computers and tell them what to do, by writing code in a specific syntax or structure that the computer can understand and execute. There are many programming languages, each with their own strengths, weaknesses, and areas of application. Some popular programming languages include Java, Python, C++, JavaScript, and Ruby. The choice of programming language depends on factors such as the nature of the application being developed, the target platform or environment, and the skill level of the developers involved."
+    },
+    {
+      "id": 102,
+      "name": "MEGABYTE",
+      "length": 8,
+      "definition": "A megabyte (MB) refers to a unit of digital information that is equal to 1,000,000 bytes. It is commonly used to measure the storage capacity of digital storage devices, such as hard drives or flash drives, as well as the size of files and documents. One megabyte is equivalent to 1,024 kilobytes (KB) or 0.001 gigabytes (GB). The size of software programs, images, videos, and other digital content is often expressed in megabytes. There are 8 megabits (Mb) in a megabyte (MB)."
+    },
+    {
+      "id": 106,
+      "name": "MNEMONIC",
+      "length": 8,
+      "definition": "mnemonic is a memory aid, such as a word, phrase, or pattern, that helps a user remember a complex piece of information, such as a command or a password. Mnemonics are commonly used in programming languages and other technical systems to simplify and standardize the syntax and structure of commands and to help users remember them. For example, the mnemonic 'print' might be used in a programming language to indicate a command to print text on the screen. Mnemonics can also be used to help remember sequences of steps, such as in a software installation or configuration process."
+    },
+    {
+      "id": 107,
+      "name": "MODELING",
+      "length": 8,
+      "definition": "Modeling is the process of creating an abstract representation or simulation of a real-world system or concept using mathematical, graphical, or other techniques. Models can be used to analyze, simulate, and predict the behavior of complex systems, and can be used in a variety of fields, including software engineering, artificial intelligence, and economics. For example, a software developer might use a model to simulate the behavior of a new application before it is deployed, or a data scientist might use a statistical model to analyze patterns in a large dataset. Models can range in complexity from simple diagrams to complex mathematical equations, and can be created using a variety of tools and software."
+    },
+    {
+      "id": 110,
+      "name": "MUTATION",
+      "length": 8,
+      "definition": "Mutation is the deliberate and controlled modification of code in order to test the robustness and effectiveness of automated testing tools. This is done by introducing small changes, or 'mutants', to the source code, which should cause the automated tests to fail if they are working properly. The goal of mutation testing is to identify weaknesses in the test suite and to improve the overall quality of the software by finding and fixing defects that might otherwise go undetected. By testing the effectiveness of the testing tools themselves, mutation testing can help to ensure that software is reliable and resilient, and that it meets the needs and expectations of its users."
+    },
+    {
+      "id": 118,
+      "name": "OPERATOR",
+      "length": 8,
+      "definition": "(1) An operator is a symbol or keyword that performs an action or operation on one or more values or expressions to produce a result. For example, in the expression '5 + 3', the plus symbol (+) is an operator that performs the addition operation on the values 5 and 3, producing the result 8. There are different types of operators in programming, including arithmetic operators (such as +, -, *, /), comparison operators (such as <, >, ==, !=), logical operators (such as &&, ||, !), assignment operators (such as =, +=, -=), and bitwise operators (such as &, |, ^). (2) A person, device, program, or computer system that uses an information system for the purpose of data processing in information exchange."
+    },
+    {
+      "id": 120,
+      "name": "OVERFLOW",
+      "length": 8,
+      "definition": "Overflow is a condition in which a numeric value exceeds the range of values that a particular data type can represent. This can happen, for example, when adding two large numbers together or multiplying two numbers that are close to the maximum value for a particular data type. When overflow occurs, the result is typically an incorrect or unexpected value, which can lead to errors in program execution. Developers need to be aware of overflow conditions and implement appropriate error handling and data validation to prevent them from occurring."
+    },
+    {
+      "id": 122,
+      "name": "PARALLEL",
+      "length": 8,
+      "definition": "(1) Pertaining to the simultaneity of two or more processes. (2) Pertaining to the simultaneous processing of individual parts of a whole, such as the bits of a character or the characters of a word, using separate facilities for the various parts. (3) Term describing simultaneous transmission of the bits making up a character, usually eight bits [one byte]. Contrast with serial."
+    },
+    {
+      "id": 126,
+      "name": "PASSWORD",
+      "length": 8,
+      "definition": "Password is a string of characters used to authenticate the identity of a user or system. It is a security measure used to protect access to resources such as computer systems, networks, or applications. Typically, a password is a secret that is known only to the user or system administrator and is required to be entered before access is granted. Passwords can vary in complexity, length, and format depending on the level of security required. It is recommended that passwords be kept confidential and changed regularly to reduce the risk of unauthorized access."
+    },
+    {
+      "id": 130,
+      "name": "PLATFORM",
+      "length": 8,
+      "definition": "The hardware and software which must be present and functioning for an application program to run [perform] as intended. A platform includes, but is not limited to the operating system or executive software, communication software, microprocessor, network, input/output hardware, any generic software libraries, database management, user interface software, and the like."
+    },
+    {
+      "id": 136,
+      "name": "PROTOCOL",
+      "length": 8,
+      "definition": "In the context of computer networking, a protocol refers to a set of rules that dictate how data is transmitted and received between devices on a network. These rules outline things such as how data is formatted, how it is transmitted, and how devices identify and communicate with each other. Protocols are used to ensure that data is transmitted and received accurately and efficiently, and to enable different types of devices and applications to communicate with each other. Examples of network protocols include TCP/IP, HTTP, and FTP."
+    },
+    {
+      "id": 142,
+      "name": "REGISTER",
+      "length": 8,
+      "definition": "A small, high speed memory circuit within a microprocessor that holds addresses and values of internal operations; e.g., registers keep track of the address of the instruction being executed and the data being processed. Each microprocessor has a specific number of registers depending upon its design."
+    },
+    {
+      "id": 153,
+      "name": "SOFTWARE",
+      "length": 8,
+      "definition": "Software is the set of instructions or programs that run on a computer system to perform specific tasks. It includes everything from the operating system and system utilities to application software, such as word processors, spreadsheets, and video games. Software can be written in various programming languages, and it can be designed to run on different types of devices, such as desktop computers, smartphones, and embedded systems. The development of software involves various stages, including design, coding, testing, and maintenance, and it requires a team of skilled professionals with expertise in different areas, such as software engineering, programming, and project management."
+    },
+    {
+      "id": 163,
+      "name": "TERABYTE",
+      "length": 8,
+      "definition": "A terabyte (TB) is a unit of digital information storage equal to 1,000 gigabytes (GB), or one trillion bytes. It's a measure of the amount of data that a storage device, such as a hard drive or flash drive, can hold. Terabytes are commonly used to describe the capacity of large-scale data storage systems, such as cloud storage, data centers, and high-capacity hard drives. As the amount of data being generated continues to grow rapidly, the need for terabyte-scale storage solutions is becoming increasingly important for businesses and individuals alike."
+    },
+    {
+      "id": 164,
+      "name": "TERMINAL",
+      "length": 8,
+      "definition": "Terminal usually refers to a hardware device or software interface used to access a computer's command-line interface (CLI) or text-based user interface (TUI). A CLI is a way to interact with a computer through text commands rather than a graphical user interface (GUI). A TUI is a way to interact with a computer through text-based menus or forms. Terminals can be physical devices, such as a keyboard and monitor connected to a server, or software applications, such as PuTTY or Terminal on a personal computer. They are used for various purposes such as remote access to a server, programming, and system administration."
+    },
+    {
+      "id": 181,
+      "name": "VALIDATE",
+      "length": 8,
+      "definition": "To validate means to check if the software satisfies the specified requirements and meets the intended purpose. It involves evaluating the software for accuracy, completeness, and suitability for its intended use. The process of validation typically involves a series of tests and reviews to ensure that the software functions as expected and meets the necessary quality standards. Validation is an important part of the software development life cycle as it ensures that the software is working as intended and meets the needs of its users."
+    },
+    {
+      "id": 182,
+      "name": "VARIABLE",
+      "length": 8,
+      "definition": "variable is a named memory location that can store a value. It is a fundamental concept in programming and is used to store and manipulate data within a program. Variables can hold different data types such as integers, floating-point numbers, characters, and more complex data structures such as arrays and objects. Programmers can assign values to variables, read values from variables, and perform operations on variables to modify their values. The scope of a variable determines where it can be accessed within the program."
+    },
+    {
+      "id": 189,
+      "name": "WATCHDOG",
+      "length": 8,
+      "definition": "Watchdog is a program or hardware device that monitors a system or application for errors or malfunctions. It is designed to prevent the system from becoming unresponsive or crashing by periodically checking to make sure that the system is functioning properly. If a problem is detected, the watchdog will take corrective action, such as resetting the system or triggering an alarm, to prevent further damage or downtime. Watchdogs are often used in embedded systems and real-time applications where system failures can have serious consequences."
+    },
+    {
+      "id": 216,
+      "name": "FRONTEND",
+      "length": 8,
+      "definition": "Frontend development refers to the development of the user interface and experience of a website or application. This includes designing and developing the look and feel of the website or application, as well as the interactions and functionality that users can perform. Frontend developers typically use HTML, CSS, and JavaScript to create the user interface and make it interactive. They may also use frontend frameworks and libraries, such as React or Angular, to streamline the development process and provide additional functionality. The goal of frontend development is to create a visually appealing, responsive, and user-friendly interface that engages and meets the needs of the user."
+    },
+    {
+      "id": 223,
+      "name": "TEMPLATE",
+      "length": 8,
+      "definition": "A template is a pre-built structure or layout for creating other documents or objects. Templates are often used in web development to create consistent user interfaces, as well as in content management systems to provide a consistent look and feel for website pages. Templates can also be used in software development to create reusable code structures for commonly used functionality. Templates can be created in a variety of formats, including HTML, CSS, JavaScript, and various programming languages. They typically include placeholder content that can be replaced with specific content or data to create the final document or object. Templates can save developers time and effort by providing a starting point for new projects or features, and can help ensure consistency and standardization across a project or organization."
+    },
+    {
+      "id": 224,
+      "name": "PROPERTY",
+      "length": 8,
+      "definition": "A property is a characteristic or attribute of an object or entity that can be read, written or accessed through code. Properties are commonly used in object-oriented programming to encapsulate data and behavior. A property provides a way to define and access data members of a class, and it allows you to control how the data is accessed and modified. For example, a property might allow you to set a maximum value for a number, or it might provide read-only access to a particular data member. In programming languages such as C#, Java and Python, properties are often used to provide a public interface for accessing private fields of a class. This allows you to control how the data is accessed, and it helps to maintain the integrity of the object's state. Properties can also be used in markup languages like HTML and XML, where they are used to define the attributes of a tag. For example, the 'src' attribute of an 'img' tag specifies the location of the image file to be displayed, and the 'href' attribute of an 'a' tag specifies the URL to be linked to."
+    }
+  ],
+  "9": [
+    {
+      "id": 2,
+      "name": "ALGORITHM",
+      "length": 9,
+      "definition": "1) A finite set of well-defined rules for the solution of a problem in a finite number of steps. (2) Any sequence of operations for performing a specific task."
+    },
+    {
+      "id": 6,
+      "name": "ASSEMBLER",
+      "length": 9,
+      "definition": "A computer program that translates programs [source code files] written in assembly language into their machine language equivalents [object code files]. Contrast with compiler, interpreter. See: cross-assembler, cross-compiler."
+    },
+    {
+      "id": 7,
+      "name": "ASSERTION",
+      "length": 9,
+      "definition": "A logical expression specifying a program state that must exist or a set of conditions that program variables must satisfy at a particular point during program execution."
+    },
+    {
+      "id": 15,
+      "name": "BENCHMARK",
+      "length": 9,
+      "definition": "A process of measuring the performance of a company's products, services, or processes against those of another business considered to be the best in the industry, aka “best in class.” The point of benchmarking is to identify internal opportunities for improvement."
+    },
+    {
+      "id": 21,
+      "name": "BLUEPRINT",
+      "length": 9,
+      "definition": "is a single diagram that rules the entire software development process. We can even compare a software development blueprint to something similar to constructing a building. Raising a building from scratch requires having a plan. Architects refer to such a plan as a blueprint."
+    },
+    {
+      "id": 25,
+      "name": "BOOTSTRAP",
+      "length": 9,
+      "definition": "(1) A short computer program that is permanently resident or easily loaded into a computer and whose execution brings a larger program, such an operating system or its loader, into memory. (2) a free, open source front-end development framework for the creation of websites and web apps, Designed to enable responsive development of mobile-first websites."
+    },
+    {
+      "id": 40,
+      "name": "COMPONENT",
+      "length": 9,
+      "definition": "A component is an identifiable part of a larger program or construction. Usually, a component provides a particular function or group of related functions. In programming design, a system is divided into components that in turn are made up of modules."
+    },
+    {
+      "id": 42,
+      "name": "CONDITION",
+      "length": 9,
+      "definition": "A condition refers to a specific criterion or set of criteria that must be met in order for a certain action or behavior to occur within the system. Conditions can be used to control the flow of information, data, or processes within the system and to trigger certain events or actions based on specific input or output values."
+    },
+    {
+      "id": 45,
+      "name": "COROUTINE",
+      "length": 9,
+      "definition": "A routine that begins execution at the point at which operation was last suspended, and that is not required to return control to the program or subprogram that called it. Contrast with subroutine."
+    },
+    {
+      "id": 51,
+      "name": "DEBUGGING",
+      "length": 9,
+      "definition": "Debugging is a multistep process that involves identifying a problem, isolating the source of the problem and then either correcting the problem or determining a way to work around it. The final step of debugging is to test the correction or workaround and make sure it works."
+    },
+    {
+      "id": 55,
+      "name": "DELIMITER",
+      "length": 9,
+      "definition": "A delimiter is a character or set of characters used to separate or delimit different elements of data within a file, string, or data structure. Delimiters are commonly used in programming languages, data formats, and database systems to define the boundaries between individual data items or fields."
+    },
+    {
+      "id": 57,
+      "name": "DEVELOPER",
+      "length": 9,
+      "definition": "A developer is a professional who specializes in creating, designing, building, and maintaining software applications. Developers may work on a variety of projects, ranging from simple mobile applications to complex enterprise software systems. The primary responsibilities of a developer include writing code, testing software, troubleshooting issues, and collaborating with other team members to ensure the successful completion of software projects. Developers typically have expertise in one or more programming languages, frameworks, and software development tools, and are able to apply this knowledge to build high-quality software solutions."
+    },
+    {
+      "id": 64,
+      "name": "EMULATION",
+      "length": 9,
+      "definition": "Emulation refers to the process of creating a software-based simulation of hardware or software that is designed to behave like the original system. Emulation allows software developers to run programs on a computer system or platform that it was not originally designed for, or to test software in a controlled and isolated environment. Emulation can also be used to preserve legacy software and hardware systems by providing a way to run them on modern hardware or software platforms. Developers working with emulation must have a thorough understanding of the original hardware or software system being emulated, as well as the techniques and tools used to simulate its behavior."
+    },
+    {
+      "id": 69,
+      "name": "EXCEPTION",
+      "length": 9,
+      "definition": "An exception refers to an event or condition that occurs during program execution that disrupts the normal flow of the program. Exceptions can occur due to errors in code, such as a divide-by-zero error or an invalid input, or due to external factors, such as network failures or database errors. When an exception occurs, the program will typically throw or raise an exception, which can be caught and handled by the software. Exception handling is an important aspect of software development, as it allows developers to write more robust and reliable software by anticipating and handling potential errors and failures."
+    },
+    {
+      "id": 76,
+      "name": "FLOWCHART",
+      "length": 9,
+      "definition": "(1) A graphical representation in which symbols are used to represent such things as operations, data, flow direction, and equipment, for the definition, analysis, or solution of a problem. (2) A control flow diagram in which suitably annotated geometrical figures are used to represent operations, data, or equipment, and arrows are used to indicate the sequential flow from one to another. Syn: flow diagram. See: block diagram, box diagram, bubble chart, graph, input-process-output chart, structure chart."
+    },
+    {
+      "id": 81,
+      "name": "HANDSHAKE",
+      "length": 9,
+      "definition": "A handshake refers to a process of establishing a connection or agreement between two entities in a networked system or application. The term is often used in reference to the initial exchange of messages between a client and server in a communication protocol such as TCP/IP. During a handshake, the client and server exchange messages to verify their identities and establish parameters for communication, such as encryption keys and data formats. Handshakes can also occur between software components or devices to synchronize their operations or exchange data. A successful handshake is a crucial step in establishing a reliable and secure connection or exchange of information between entities in a networked system or application."
+    },
+    {
+      "id": 86,
+      "name": "INTERFACE",
+      "length": 9,
+      "definition": "(1) A shared boundary between two functional units, defined by functional characteristics, common physical interconnection characteristics, signal characteristics, and other characteristics, as appropriate. The concept involves the specification of the connection of two devices having different functions. (2) A point of communication between two or more processes, persons, or other physical entities. (3) A peripheral device which permits two or more devices to communicate."
+    },
+    {
+      "id": 87,
+      "name": "INTERPRET",
+      "length": 9,
+      "definition": "To interpret means to translate and execute source code or programming instructions in a high-level language into machine-readable code that a computer can understand and execute. Interpreters are software programs that read and execute code in real-time, line by line, without compiling the entire program beforehand. An interpreter typically analyzes each line of code, converts it into machine code, and executes it immediately. Interpreted programming languages, such as Python, JavaScript, and Ruby, use interpreters to run their code, while compiled languages, such as C and C++, require compilation before they can be executed. Interpreters are used in many different types of software, including web browsers, scripting languages, and database management systems. They provide a flexible and efficient way to execute code, but may have slower performance compared to compiled code."
+    },
+    {
+      "id": 88,
+      "name": "INTERRUPT",
+      "length": 9,
+      "definition": "(1) The suspension of a process to handle an event external to the process. (2) A technique to notify the CPU that a peripheral device needs service, i.e., the device has data for the processor or the device is awaiting data from the processor. The device sends a signal, called an interrupt, to the processor. The processor interrupts its current program, stores its current operating conditions, and executes a program to service the device sending the interrupt. After the device is serviced, the processor restores its previous operating conditions and continues executing the interrupted program. A method for handling constantly changing data. Contrast with polling."
+    },
+    {
+      "id": 99,
+      "name": "MAINFRAME",
+      "length": 9,
+      "definition": "A large, powerful, and high-performance computer system that is designed to handle complex and data-intensive applications, such as financial transactions, scientific simulations, and industrial automation. Mainframes typically have large amounts of memory and storage, and support multiple processors or CPUs. They are also known for their reliability, security, and scalability, and are used by large organizations and enterprises for mission-critical operations. Mainframes are often used in conjunction with other computing technologies, such as cloud computing and distributed systems, to provide scalable and efficient processing power for a wide range of applications. Mainframe development involves designing and optimizing software applications to run on mainframes, taking advantage of their unique capabilities and performance characteristics."
+    },
+    {
+      "id": 103,
+      "name": "MEGAHERTZ",
+      "length": 9,
+      "definition": "A megahertz (MHz) refers to a unit of frequency that is equal to one million cycles per second. It is commonly used to measure the clock speed of computer processors, which determines how many instructions a processor can execute per second. A higher clock speed, measured in megahertz or gigahertz (GHz), typically indicates faster performance and better processing capabilities. However, clock speed is not the only factor that determines a processor's performance, and other factors such as the number of processor cores, cache size, and architecture also play a significant role."
+    },
+    {
+      "id": 105,
+      "name": "MICROCODE",
+      "length": 9,
+      "definition": "Microcode is a low-level, machine-readable code that controls the behavior of a computer's central processing unit (CPU). Microcode is typically stored in firmware within the CPU and provides a layer of abstraction between the CPU hardware and higher-level software, allowing the CPU to execute complex instructions more efficiently. Microcode is specific to each CPU architecture and is typically developed by the manufacturer. It can be updated or modified through firmware updates."
+    },
+    {
+      "id": 123,
+      "name": "PARAMETER",
+      "length": 9,
+      "definition": "A parameter is a value that is passed into a function or method when it is called. It is a variable that holds a value that is expected to change when the function is executed. Parameters allow functions to be more flexible and reusable by accepting different inputs and producing different outputs based on those inputs. They are often used to provide additional information or context to a function, and can be specified by the caller when the function is invoked. In most programming languages, parameters are defined within the parentheses that follow the function name."
+    },
+    {
+      "id": 132,
+      "name": "PRECISION",
+      "length": 9,
+      "definition": "Precision is the level of detail and accuracy in representing and processing numerical values. It describes the number of significant digits or decimal places used to express a value. A higher precision indicates a more exact representation of the value. Precision is often critical in scientific and engineering applications, where accurate measurements and calculations are necessary. It can also be important in financial applications, where even small rounding errors can have significant impacts. For example, the precision of a floating-point number in a programming language is typically determined by the number of bits used to represent it. A single-precision floating-point number in most programming languages uses 32 bits and provides about 7 decimal digits of precision, while a double-precision floating-point number uses 64 bits and provides about 16 decimal digits of precision."
+    },
+    {
+      "id": 140,
+      "name": "RECURSION",
+      "length": 9,
+      "definition": "Recursion is the technique in which a function calls itself repeatedly until it reaches a base case, allowing it to solve complex problems by breaking them down into smaller, more manageable subproblems. The process of recursion involves dividing the problem into smaller subproblems that can be solved easily, and then combining the results to solve the original problem. Recursion is commonly used in programming languages, data structures, and algorithms, and can be an efficient way to solve problems that involve repetitive tasks or large amounts of data. However, it also requires careful consideration of base cases, termination conditions, and the amount of memory used, as recursion can quickly lead to stack overflow and other issues if not properly implemented."
+    },
+    {
+      "id": 143,
+      "name": "RETENTION",
+      "length": 9,
+      "definition": "Retention in development refers to the ability of a system or technology to store data or information over time, without losing or corrupting it. This can be achieved through various methods such as backups, redundancy, and error correction. Retention is important for ensuring data integrity and continuity of operations, particularly in industries that rely heavily on data such as finance, healthcare, and government."
+    },
+    {
+      "id": 151,
+      "name": "SIMULATOR",
+      "length": 9,
+      "definition": "A simulator is a tool used to mimic the behavior of a real-world system or device. It allows developers to test and experiment with their software in a controlled environment without the risks or costs associated with testing on real hardware. Simulators are commonly used in fields such as aerospace, automotive, and electronics to test the performance of software systems that interact with physical hardware. By accurately replicating the behavior of a real-world system, simulators can help identify and fix potential issues before they arise in a live environment."
+    },
+    {
+      "id": 156,
+      "name": "STATEMENT",
+      "length": 9,
+      "definition": "A statement is a syntactic unit of an imperative programming language that expresses some action to be carried out. Statements are typically composed of keywords, operators, expressions, and other programming constructs. They can be used to perform a wide variety of tasks, such as assigning values to variables, controlling program flow with conditional statements, and looping through a set of instructions."
+    },
+    {
+      "id": 158,
+      "name": "STRUCTURE",
+      "length": 9,
+      "definition": "A structure is a composite data type that groups together related data elements of different data types under a single name. It can be thought of as a way to define a custom data type by combining different data types. Structures can be used to represent complex objects, such as records or classes, and can be defined with various members, including variables, arrays, and other structures. The structure provides a way to access and manipulate the data in a more organized and efficient manner. It is a commonly used concept in programming languages such as C, C++, and Java."
+    },
+    {
+      "id": 174,
+      "name": "UNDERFLOW",
+      "length": 9,
+      "definition": "The state in which a calculator shows a zero indicator for the most significant part of a number while the least significant part of the number is dropped. For example, if the calculator output capacity is four digits, the number .0000432 will be shown as .0000. See: arithmetic underflow."
+    },
+    {
+      "id": 177,
+      "name": "USABILITY",
+      "length": 9,
+      "definition": "the ease of use and learnability of a product, software or application. It involves designing interfaces and interactions that are intuitive and efficient for users to perform their desired tasks. Usability testing is often conducted to evaluate a product's usability, identify potential issues or user pain points, and improve the overall user experience. Good usability is important for user satisfaction, adoption, and retention of a product."
+    },
+    {
+      "id": 190,
+      "name": "WATERFALL",
+      "length": 9,
+      "definition": "Waterfall model is a linear and sequential approach to project management. It consists of a series of phases, including conception, initiation, planning, execution, monitoring, and maintenance. Each phase must be completed before the next phase can begin. The waterfall model is often contrasted with agile methodologies, which prioritize flexibility and rapid iteration over strict adherence to a fixed plan. The waterfall model can be useful for projects with well-defined requirements and a clear understanding of the desired end product, but it can be less effective for projects with more ambiguity or uncertainty."
+    },
+    {
+      "id": 205,
+      "name": "FRAMEWORK",
+      "length": 9,
+      "definition": "Framework refers to a set of rules, guidelines, and libraries that are used to build applications. Frameworks provide a standardized approach to software development and can make it easier for developers to build and maintain software applications. A framework typically includes a number of pre-built components, such as libraries and templates, that can be used to accelerate the development process. These components often provide functionality that is commonly needed in software development, such as user authentication, database access, and user interface design. Frameworks can be used for a variety of different programming languages and platforms, including web development, desktop development, and mobile development. Popular examples of frameworks include Ruby on Rails, Django, AngularJS, and React."
+    },
+    {
+      "id": 213,
+      "name": "ATTRIBUTE",
+      "length": 9,
+      "definition": "An attribute is a characteristic or property of an object or data structure. It describes a value or state associated with an object or data element. Attributes can be used to define various aspects of an object, such as its size, color, shape, type, or other characteristics that describe its behavior or functionality. Attributes can be used in various programming languages and are often used to create classes or objects in object-oriented programming (OOP). In OOP, attributes are typically defined within a class and represent the state or properties of an object. They are used to store data and provide a way to access and manipulate that data. Attributes can also be used in other programming paradigms, such as procedural programming or functional programming, to describe various aspects of data structures or program elements. They are often used to provide metadata or other descriptive information about code elements, such as functions, variables, or modules."
+    },
+    {
+      "id": 226,
+      "name": "WIREFRAME",
+      "length": 9,
+      "definition": "A wireframe is a visual representation of a website, application, or system interface that shows the layout and arrangement of its components, such as menus, buttons, images, and content, without the use of detailed design elements or visual styling. It typically consists of simple shapes, such as rectangles, squares, and circles, and may be created using a specialized software tool or drawn by hand.Wireframes are often used as a preliminary step in the design process to plan the overall structure and functionality of a digital product before adding more detailed visual design elements. They can help identify potential usability issues, ensure consistency and coherence in the user experience, and facilitate communication and collaboration among the design team, stakeholders, and developers."
+    }
+  ]
+}

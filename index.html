@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="paper">
+        <a href="games/quiz/codequiz.html"></a>
+      <div class="header-container">
+        <nav class="left-side">
+          <button type="button" class="button">
+            <img src="assets/icons/user.svg" alt="" class="icon" />
+            <span>Profile</span>
+          </button>
+          <button type="button" class="button">
+            <img src="assets/icons/trophy.svg" alt="" class="icon" />
+            <span>Ranking</span>
+          </button>
+        </nav>
+        <div>
+          <img src="assets/logoTheCode.svg" alt="" class="icon" />
+        </div>
+        <nav class="right-side">
+          <button type="button" id="settings-button" class="button">
+            <img
+              src="assets/icons/gear.svg"
+              alt=""
+              class="icon"
+            />
+            <span>Settings</span>
+          </button>
+          <button type="button" id="about-button" class="button">
+            <img
+              src="assets/icons/question.svg"
+              alt=""
+              class="icon"
+            />
+            <span>About</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+      <div class="screen">
+        <!-- <section class="news-container">
+            <div class="news-card">
+                <div class="news-image">
+                </div>
+                <div class="news-info">
+                </div>
+            </div>
+        </section> -->
+        <section class="games-container">
+            <div class="games-title">
+                <h2>games</h2>
+            </div>
+            <div class="games-list">
+                <div class="game-card paper" id="CodeQuiz">
+                    <div class="game-image">
+                    </div>
+                    <div class="game-info">
+                        <div class="game-text text">
+                            <h3 class="game-title">CodeQuiz</h3>
+                            <p>Test your knowledge about different programming languages with this quiz game. There are over 800 multiple choice questions.</p>
+                            <a href="games/quiz/codequiz.html" class="gamebutton paper">Play CodeQuiz</a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="game-card paper" id="CodeTerm">
+                    <div class="game-image">
+                    </div>
+                    <div class="game-info">
+                        <div class="game-text text">
+                            <h3 class="game-title">CodeTerm</h3>
+                            <p>Discover the secret word by inputting guesses and receiving feedback on which letters are correct and in the correct position.</p>
+                            <a href="games/term/codeterm.html" class="gamebutton paper">Play CodeTerm</a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="game-card paper" id="CodeText">
+                    <div class="game-image">
+
+                    </div>
+                    <div class="game-info">
+                        <div class="game-text text">
+                            <h3 class="game-title">CodeText</h3>
+                            <p>Discover the title of the article by guessing the missing words in the text. You have as much tries as you can get.</p>
+                            <a href="games/text/codetext.html" class="gamebutton paper">Play CodeText</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Modais -->
+    <div id="fade" class="hide"></div>
+    <div id="settings-modal" class="hide modal">
+      <div>
+        <h2>Settings</h2>
+      </div>
+      <div>
+        <h3>Theme</h3>
+        <div id="toggle-container">
+          <img src="assets/icons/sun.svg" alt="" class="icon"/>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" name="change-theme" id="change-theme" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <img src="assets/icons/moon.svg" alt="" class="icon"/>
+        </div>
+      </div>
+      <div>
+        <h3>High contrast</h3>
+        <div id="toggle-container">
+          <img src="assets/icons/contrastlow.svg" alt="" class="icon"/>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" name="change-contrast" id="change-contrast"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <img src="assets/icons/contrasthigh.svg" alt="" class="icon"/>
+        </div>
+      </div>
+      <div>
+        <h3>Text alignment</h3>
+        <form id="three-options-radio" class="radio-container" name="alignGroup">
+          <input type="radio" name="alignOption" id="align-left" value="left" checked />
+          <label for="align-left"
+            ><img src="assets/icons/alignleft.svg" alt=""class="icon"
+          /></label>
+          <input type="radio" name="alignOption" id="align-center" value="center" />
+          <label for="align-center"
+            ><img src="assets/icons/aligncenter.svg" alt="" class="icon"
+          /></label>
+          <input type="radio" name="alignOption" id="align-justify" value="justify" />
+          <label for="align-justify"><img src="assets/icons/alignjustify.svg" alt="" class="icon" /></label>
+        </form>
+      </div>
+      <div>
+        <h3>Font size</h3>
+        <h4></h4>
+        <form id="three-options-radio" class="radio-container fontSizeGroup" name="fontSizeGroup">
+          <input type="radio" name="fontSize" id="font-small" class="font-size" value="sm" checked />
+          <label for="font-small"
+            ><img src="assets/icons/textsmall.svg" alt=""
+            class="icon"/></label>
+          <input type="radio" name="fontSize" id="font-medium" class="font-size" value="md" />
+          <label for="font-medium"
+            ><img src="assets/icons/textmedium.svg" alt="" class="icon"
+          /></label>
+          <input type="radio" name="fontSize" id="font-big" class="font-size" value="lg" />
+          <label for="font-big"
+            ><img src="assets/icons/textbig.svg" alt="" class="icon" /></label
+          >
+        </form>
+      </div>
+      <div>
+        <button type="button" id="settings-close-button" class="button">
+          <img
+            src="assets/icons/x.svg"
+            alt=""
+            class="icon"
+          />
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+    <div id="about-modal" class="hide modal">
+      <div>
+        <h2>About</h2>
+      </div>
+      <div class="modal-text">
+        <div class="modal-text-container">
+          <p class="text">
+            <strong>TheCode</strong> is a collection of games inspired by other popular ones like Wordle, Redactle, and Quiz, but with a focus on the programming universe to help students assimilate essential terms and subjects. This application was developed by 
+                <a href="https://github.com/DanielCaumo/" target="_blank">Daniel Caumo</a>,
+                <a href="https://github.com/gabriel-lima-b" target="_blank">Gabriel Lima</a>
+             e
+                <a href="https://github.com/TiagoCassol" target="_blank">Tiago Cassol</a> 
+            under the guidance of Professor Claudio Roberto Silva Alves sing the mobile-first concept and usability for the Graphical Interface Development for Mobile Devices discipline of the Technical Course in Systems Development at Senac-RS.
+          </p>
+        </div>
+      </div>
+      <div>
+        <button type="button" id="about-close-button" class="button">
+          <img
+            src="assets/icons/x.svg"
+            alt=""
+            class="icon"
+            id="about-close-button"
+          />
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

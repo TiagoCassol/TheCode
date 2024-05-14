@@ -1,0 +1,194 @@
+#fade,
+#settings-modal,
+#about-modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#settings-modal,
+#about-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 300px;
+  z-index: 10;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: var(--base1);
+}
+
+.modal div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  container-type: inline-size;
+  gap: 8px;
+}
+
+#settings-modal.hide,
+#about-modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#settings-modal.hide,
+#about-modal.hide {
+  top: 0;
+}
+
+#toggle-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--base3);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 6px;
+  bottom: 4px;
+  background-color: var(--blue);
+  border: 1px solid var(--green);
+  box-shadow: inset 2px 1px 6px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--base3);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--base4);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(42px);
+  -ms-transform: translateX(42px);
+  transform: translateX(42px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#three-options-radio {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#three-options-radio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+input[type='radio'] {
+  appearance: none;
+  display: none;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--base3);
+  border: 1px solid var(--base4);
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  border-radius: 9999px;
+  overflow: hidden;
+  transition: linear 0.3s;
+  color: #000;
+}
+
+#theme-label {
+  justify-content: center;
+  align-items: center;
+  background-color: initial;
+  border: initial;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  border-radius: initial;
+  overflow: initial;
+  transition: initial;
+  color: #000;
+}
+
+input[type='radio']:checked + label {
+  background-color: var(--blue);
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.modal-text-container {
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
+  padding: 12px;
+}
+
+@media (max-height: 779px) {
+  #settings-modal,
+  #about-modal {
+    height: 550px;
+  }
+}

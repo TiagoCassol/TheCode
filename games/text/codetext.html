@@ -1,0 +1,352 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheCode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script src="../../js/script.js" defer></script>
+  <script src="codetext.js"></script>
+  <link rel="stylesheet" href="codetext.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container" id="header-text">
+      <nav class="left-side">
+        <a href="../../index.html" class="button">
+          <img src="../../assets/icons/chevron-left.svg" alt="" class="icon" />
+          <span>Back</span>
+        </a>
+      </nav>
+      <div>
+        <img src="../../assets/logoCodeText.svg" alt="" class="icon" />
+      </div>
+      <nav class="right-side">
+        <button type="button" id="settings-button" class="button">
+          <img src="../../assets/icons/gear.svg" alt="" class="icon" />
+          <span>Settings</span>
+        </button>
+        <button type="button" id="about-button" class="button">
+          <img src="../../assets/icons/question.svg" alt="" class="icon" />
+          <span>How to play</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="game-container">
+
+      <!--numero de tentativas-->
+      <div id="container">
+        <div class="navBottom">
+          <div class="palpites" id="result">attempt...</div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div id="results" class="attempt"></div>
+            </div>
+          </div>
+          <button class="sendButton button" onclick="openNav()"><img src="../../assets/icons/list.svg" alt=""
+              class="icon"></button>
+        </div>
+      </div>
+      <div class="win">
+        <p id="resp" class="" style="display: none;">voce acertou em</p>
+        <div id="numero" style="display: none;">0</div>
+        <p id="resposta" style="display: none;">tentivas</p>
+      </div>
+
+      <!--texto-->
+      <div class="texto text" id="texto"> </div>
+
+      <!--onde usuário ira digitar-->
+      <div class="navBottom">
+        <button class="nextGame" id="nextGame" onclick="nextText()" hidden>Next Game</button>
+        <input class="writeSpace" type="text" id="entrada-texto">
+        <button class="sendButton" id="botao" onclick="palpite()"><img src="../../assets/icons/pen.png" alt=""
+            class="icon"></button>
+      </div>
+      <!--palavras tentadas-->
+      <div class="erros"></div>
+    </div>
+
+  </main>
+  <div id="fade" class="hide"></div>
+  <div id="settings-modal" class="hide modal">
+    <div>
+      <h2>Settings</h2>
+    </div>
+    <div>
+      <h3>Theme</h3>
+      <div id="toggle-container">
+        <img src="../../assets/icons/sun.svg" alt="" class="icon" />
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" name="change-theme" id="change-theme" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <img src="../../assets/icons/moon.svg" alt="" class="icon" />
+      </div>
+    </div>
+    <div>
+      <h3>High contrast</h3>
+      <div id="toggle-container">
+        <img src="../../assets/icons/contrastlow.svg" alt="" class="icon" />
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" name="change-contrast" id="change-contrast" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <img src="../../assets/icons/contrasthigh.svg" alt="" class="icon" />
+      </div>
+    </div>
+    <div>
+      <h3>Text alignment</h3>
+      <form id="three-options-radio" class="radio-container" name="alignGroup">
+        <input type="radio" name="alignOption" id="align-left" value="left" checked />
+        <label for="align-left"><img src="../../assets/icons/alignleft.svg" alt="" class="icon" /></label>
+        <input type="radio" name="alignOption" id="align-center" value="center" />
+        <label for="align-center"><img src="../../assets/icons/aligncenter.svg" alt="" class="icon" /></label>
+        <input type="radio" name="alignOption" id="align-justify" value="justify" />
+        <label for="align-justify"><img src="../../assets/icons/alignjustify.svg" alt="" class="icon" /></label>
+      </form>
+    </div>
+    <div>
+      <h3>Font size</h3>
+      <h4></h4>
+      <form id="three-options-radio" class="radio-container fontSizeGroup" name="fontSizeGroup">
+        <input type="radio" name="fontSize" id="font-small" class="font-size" value="sm" checked />
+        <label for="font-small"><img src="../../assets/icons/textsmall.svg" alt="" class="icon" /></label>
+        <input type="radio" name="fontSize" id="font-medium" class="font-size" value="md" />
+        <label for="font-medium"><img src="../../assets/icons/textmedium.svg" alt="" class="icon" /></label>
+        <input type="radio" name="fontSize" id="font-big" class="font-size" value="lg" />
+        <label for="font-big"><img src="../../assets/icons/textbig.svg" alt="" class="icon" /></label>
+      </form>
+    </div>
+    <div>
+      <button type="button" id="settings-close-button" class="button">
+        <img src="../../assets/icons/x.svg" alt="" class="icon" />
+        <span>Close</span>
+      </button>
+    </div>
+  </div>
+  <div id="about-modal" class="hide modal">
+    <div>
+      <h2>How to play</h2>
+    </div>
+    <div class="modal-text">
+      <div class="modal-text-container">
+        <p class="text">
+          <strong>Redactle</strong>  is a word guessing game where you will redact an article on Wikipedia with all the words hidden.
+        </p>
+      </div>
+    </div>
+    <div>
+      <button type="button" id="about-close-button" class="button">
+        <img src="../../assets/icons/x.svg" alt="" class="icon" id="about-close-button" />
+        <span>Close</span>
+      </button>
+    </div>
+  </div>
+</body>
+
+<script>
+
+  //define o início de uma tabela com três colunas para exibir informações de pseudo e propostas.
+  var begin = "<table class=\"w3-table\"><tr><th>Pseudo</th><th>Proposition</th><th>Occurences</th></tr>"
+  //string vazia para ser usada posteriormente para armazenar dados.
+  var propositions = ""
+  var end = "</table>"
+  // pode ser usada para sinalizar se algo foi encontrado ou não.
+  var found = false;
+  //A matriz é inicializada como vazia e é usada posteriormente para armazenar várias proposições.
+  var allPropositions = []
+
+
+  var computedtext = computeText(textoOriginal);
+  document.getElementById("texto").innerHTML = computedtext;
+
+
+  document.addEventListener('keydown', function (event) {
+    if (event.keyCode === 13) {
+      palpite();
+    }
+  });
+
+  function nextText() {
+    location.reload();
+  }
+
+  var guessedWords = []
+
+  async function palpite() {
+    var message = document.getElementById("entrada-texto").value;
+    computeMessage(message);
+    if (message === "") {
+      alert('please type a word')
+      return;
+    } else if (whitelist.includes(message)) {
+      alert('already in text')
+      return;
+    } else if (guessedWords.includes(message)) {
+      alert('word already guessed')
+      return;
+    }
+    guessedWords.push(message);
+    console.log(guessedWords);
+
+    var divNumero = document.getElementById("numero");
+    var numeroAtual = parseInt(divNumero.innerHTML);
+    var novoNumero = numeroAtual + 1;
+    divNumero.innerHTML = novoNumero;
+
+    
+    // Adicionar valor a div de erros
+    var divErros = document.querySelector(".erros");
+
+    //document.getElementById("tentativas").innerHTML = message;
+    divErros.innerHTML += message + "<br>";
+
+    var valorInput = document.getElementById("entrada-texto").value;
+
+    let texto = computedtext;
+    let palavra = message;
+
+   function contarPalavras(texto, palavra) {
+  let contador = 0;
+  const palavraMinuscula = palavra.toLowerCase();
+  const palavras = texto.toLowerCase().match(/\b\w+([-']\w+)*\b/g);
+
+  for (let i = 0; i < palavras.length; i++) {
+    if (palavras[i].toLowerCase() === palavraMinuscula && palavras[i] !== '') {
+      contador++;
+    }
+  }
+  contador = contador/2;
+  return contador;
+}
+    
+
+    // Obtém a div attempt
+    var divAttempt = document.querySelector(".attempt");
+
+    // Insere o valor do input na div attempt
+    let resultado = contarPalavras(texto, palavra);
+    document.getElementById("entrada-texto").value = "";
+    var divResultado = document.getElementById("result");
+    var divResults = document.getElementById("results");
+    result = resultado + " -  " + valorInput;
+    divResultado.innerHTML = result;
+    divResults.innerHTML += result + "<br>";
+  }
+
+  function computeMessage(message) {
+    var ok = true;
+    var alphabet = "abcdefghijklmnopqrstuvwxyz1234567890";
+    for (var i = 0; i < message.length; i++) {
+      if (!alphabet.includes(message[i].toLowerCase())) {
+        ok = false;
+      }
+    }
+
+    if (ok && message.length <= 26 && !found) {
+      var allOccurences;
+      if (accentMode) {
+        allOccurences = document.getElementsByClassName(message.toLowerCase());
+      } else {
+        allOccurences = document.getElementsByClassName(message.toLowerCase().latinise());
+      }
+
+      for (var i = 0; i < allOccurences.length; i++) {
+        allOccurences[i].classList.remove("notfound");
+        allOccurences[i].classList.add("animate-color");
+      }
+      if (!document.getElementById("texto").innerHTML.toLowerCase().split("</h1>")[0].includes("notfound")) {
+        found = true;
+        var allOccurences = document.getElementsByClassName("thisisaword");
+        for (var i = 0; i < allOccurences.length; i++) {
+          allOccurences[i].classList.remove("notfound");
+        }
+      }
+    }
+
+    if (accentMode && message.toLowerCase() == answer.toLowerCase()) {
+      found = true;
+      var allOccurences = document.getElementsByClassName("thisisaword");
+
+      for (var i = 0; i < allOccurences.length; i++) {
+        allOccurences[i].classList.remove("notfound");
+      }
+      var entradaTexto = document.getElementById("entrada-texto");
+      var botao = document.getElementById("botao");
+      document.getElementById("numero").style.display = "block";
+      document.getElementById("resp").style.display = "block";
+      document.getElementById("resposta").style.display = "block";
+      document.getElementById("nextGame").style.display = "block";
+      entradaTexto.style.display = "none";
+      botao.style.display = "none";
+    }
+  }
+
+  function computeText(textoOriginal) {
+    var alphabet = "abcdefghijklmnopqrstuvwxyz1234567890éèêçùàâœîôûïöäüë"
+    var computedtext = ""
+    var lines = textoOriginal.split('\n')
+    //lines.shift()
+    lines.unshift(answer);
+    var begin = 0;
+    var end = 0;
+    var outputline = "";
+    for (var i = 0; i < lines.length; i++) {
+      outputline = "";
+      if (lines[i].length > 0) {
+        var newword = "";
+        for (var j = 0; j < lines[i].length; j++) {
+          if (alphabet.includes(lines[i][j].toLowerCase())) {
+            newword += lines[i][j]
+          }
+          else {
+            if (newword.length > 0) {
+              if (whitelist.includes(newword)) { outputline += newword }
+              else {
+                if (accentMode) { outputline += "<span class=\"notfound thisisaword " + newword + "\">" + newword + "</span>" }
+                else { outputline += "<span class=\"notfound thisisaword " + newword.latinise() + "\">" + newword + "</span>" }
+              }
+              newword = ""
+            }
+            outputline += lines[i][j]
+          }
+        }
+        if (newword.length > 0) {
+          if (accentMode) { outputline += "<span class=\"notfound thisisaword " + newword + "\">" + newword + "</span>" }
+          else { outputline += "<span class=\"notfound thisisaword " + newword.latinise() + "\">" + newword + "</span>" }
+          newword = ""
+        }
+      }
+      else {
+        outputline = "";
+      }
+      if (i == 0) {
+        lines[i] = "<h2>" + outputline + "</h2> <br>"
+      }
+      else {
+        lines[i] = "<p>" + outputline + "</p>"
+      }
+      computedtext += lines[i];
+    }
+    return computedtext
+  }
+
+
+</script>
+
+</html>

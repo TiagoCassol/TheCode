@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script src="../../js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container w-100" id="header-quiz">
+        <nav class="left-side">
+          <a href="../../index.html" class="button">
+            <img
+              src="../../assets/icons/chevron-left.svg"
+              alt=""
+              class="icon"
+            />
+            <span>Back</span>
+          </a>
+        </nav>
+        <div>
+          <img src="../../assets/logoCodeQuiz.svg" alt="" class="icon" />
+        </div>
+        <nav class="right-side">
+          <button type="button" id="settings-button" class="button">
+            <img src="../../assets/icons/gear.svg" alt="" class="icon" />
+            <span>Settings</span>
+          </button>
+          <button type="button" id="about-button" class="button">
+            <img src="../../assets/icons/question.svg" alt="" class="icon" />
+            <span>How to play</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main style="background-color: var(--base2)">
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center mt-1">
+          <div
+            class="col-1 rounded text-center py-2"
+            style="background-color: var(--base1)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+              style="color: var(--red)"
+              id="heart1"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+              />
+            </svg>
+          </div>
+          <div
+            class="col-1 rounded text-center py-2"
+            style="background-color: var(--base1)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+              style="color: var(--red)"
+              id="heart2"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+              />
+            </svg>
+          </div>
+          <div
+            class="col-1 rounded text-center py-2"
+            style="background-color: var(--base1)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+              style="color: var(--red)"
+              id="heart3"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+              />
+            </svg>
+          </div>
+          <div class="col-6 rounded p-0" style="background-color: var(--base4)">
+            <div class="row py-2 m-0 justify-content-between">
+              <h6
+                class="col-4 col-md-5 text-center"
+                style="color: var(--text-color)"
+              >
+                Score
+              </h6>
+              <p
+                class="col-6 h4 text-end"
+                style="color: var(--text-color)"
+                id="score"
+              ></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row rounded m-2 p-2" style="background-color: var(--base4)">
+          <h6 class="col-12 col-md-5" style="color: var(--text-color)">
+            Question:
+          </h6>
+          <p class="text" style="color: var(--text-color)" id="question"></p>
+        </div>
+
+        <div class="row m-2 justify-content-between">
+          <div
+            class="col-12 col-md-5 col-md-5 rounded mb-1"
+            style="
+              background-color: var(--base3);
+              display: none;
+              transform: rotate(0);
+            "
+          >
+            <button
+              class="stretched-link text-center p-2"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                padding: 0;
+                border: none;
+                min-height: 50px;
+              "
+              onclick="selectOpt1()"
+              id="opt1"
+            ></button>
+          </div>
+          <div
+            class="col-12 col-md-5 rounded mb-1"
+            style="
+              background-color: var(--base3);
+              display: none;
+              transform: rotate(0);
+            "
+          >
+            <button
+              class="stretched-link text-center p-2"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                padding: 0;
+                border: none;
+                min-height: 50px;
+              "
+              onclick="selectOpt2()"
+              id="opt2"
+            ></button>
+          </div>
+
+          <div
+            class="col-12 col-md-5 rounded mb-1"
+            style="
+              background-color: var(--base3);
+              display: none;
+              transform: rotate(0);
+            "
+          >
+            <button
+              class="stretched-link text-center p-2"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                padding: 0;
+                border: none;
+                min-height: 50px;
+              "
+              onclick="selectOpt3()"
+              id="opt3"
+            ></button>
+          </div>
+          <div
+            class="col-12 col-md-5 rounded mb-1"
+            style="
+              background-color: var(--base3);
+              display: none;
+              transform: rotate(0);
+            "
+          >
+            <button
+              class="stretched-link text-center p-2"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                padding: 0;
+                border: none;
+                min-height: 50px;
+              "
+              onclick="selectOpt4()"
+              id="opt4"
+            ></button>
+          </div>
+          <div
+            class="col-12 col-md-5 rounded mb-1"
+            style="
+              background-color: var(--base3);
+              display: none;
+              transform: rotate(0);
+            "
+          >
+            <button
+              class="stretched-link text-center p-2"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                padding: 0;
+                border: none;
+                min-height: 50px;
+              "
+              onclick="selectOpt5()"
+              id="opt5"
+            ></button>
+          </div>
+          <div
+            class="col-12 col-md-5 rounded mb-1"
+            style="
+              background-color: var(--base3);
+              display: none;
+              transform: rotate(0);
+            "
+          >
+            <button
+              class="stretched-link text-center p-2"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                padding: 0;
+                border: none;
+                min-height: 50px;
+              "
+              onclick="selectOpt6()"
+              id="opt6"
+            ></button>
+          </div>
+        </div>
+
+        <div class="row m-4 justify-content-between">
+          <button
+            class="col-5 col-md-3 btn text-center p-2"
+            style="color: var(--text-color); background-color: var(--base3)"
+            id="skipButton"
+            onclick="skip()"
+          >
+            Skip (3)
+          </button>
+
+          <button
+            class="col-5 col-md-3 btn text-center p-2"
+            style="color: var(--text-color); background-color: var(--blue)"
+            id="answerButton"
+            onclick="answer()"
+          >
+            answer
+          </button>
+        </div>
+
+        <div class="row m-2 justify-content-between">
+          <div class="col-12">
+            <h1 class="text-center" id="answer-text"></h1>
+          </div>
+          <div class="col-12 d-flex justify-content-center mt-1">
+            <button
+              class="col-6 col-md-2 btn text-center"
+              style="
+                color: var(--text-color);
+                background-color: var(--base3);
+                display: none;
+              "
+              onClick="window.location.reload();"
+              id="again"
+            >
+              Try Again
+            </button>
+          </div>
+        </div>
+
+        <!-- MODALS  -->
+
+        <div
+          class="modal fade"
+          id="configModal"
+          tabindex="-1"
+          aria-labelledby="configModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="configModalLabel">Settings</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="infoModal"
+          tabindex="-1"
+          aria-labelledby="infoModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="infoModalLabel">
+                  Instructions
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"
+        ></script>
+
+        <script src="./control/script.js"></script>
+      </div>
+    </main>
+    <div id="fade" class="hide"></div>
+    <div id="settings-modal" class="hide modal">
+      <div class="m-1">
+        <h2>Settings</h2>
+      </div>
+      <div class="m-2">
+        <h3>Theme</h3>
+        <div id="toggle-container">
+          <img src="../../assets/icons/sun.svg" alt="" class="icon" />
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" name="change-theme" id="change-theme" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <img src="../../assets/icons/moon.svg" alt="" class="icon" />
+        </div>
+      </div>
+      <div>
+        <h3>High contrast</h3>
+        <div id="toggle-container">
+          <img src="../../assets/icons/contrastlow.svg" alt="" class="icon" />
+          <div class="toggle">
+            <label class="switch">
+              <input
+                type="checkbox"
+                name="change-contrast"
+                id="change-contrast"
+              />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <img src="../../assets/icons/contrasthigh.svg" alt="" class="icon" />
+        </div>
+      </div>
+      <div class="m-2">
+        <h3>Font size</h3>
+        <form
+          id="three-options-radio"
+          class="radio-container fontSizeGroup"
+          name="fontSizeGroup"
+        >
+          <input
+            type="radio"
+            name="fontSize"
+            id="font-small"
+            class="font-size"
+            value="sm"
+            checked
+          />
+          <label for="font-small"
+            ><img src="../../assets/icons/textsmall.svg" alt="" class="icon"
+          /></label>
+          <input
+            type="radio"
+            name="fontSize"
+            id="font-medium"
+            class="font-size"
+            value="md"
+          />
+          <label for="font-medium"
+            ><img src="../../assets/icons/textmedium.svg" alt="" class="icon"
+          /></label>
+          <input
+            type="radio"
+            name="fontSize"
+            id="font-big"
+            class="font-size"
+            value="lg"
+          />
+          <label for="font-big"
+            ><img src="../../assets/icons/textbig.svg" alt="" class="icon"
+          /></label>
+        </form>
+      </div>
+      <div class="m-2">
+        <h3>Difficulty</h3>
+        <form
+          id="three-options-radio"
+          class="radio-container"
+          name="difficultyGroup"
+        >
+          <input
+            type="radio"
+            name="difficultyOption"
+            id="difficulty-easy"
+            value="easy"
+            checked
+          />
+          <label for="difficulty-easy" style="color: var(--green)">E</label>
+          <input
+            type="radio"
+            name="difficultyOption"
+            id="difficulty-medium"
+            value="medium"
+          />
+          <label for="difficulty-medium" style="color: var(--yellow)">M</label>
+          <input
+            type="radio"
+            name="difficultyOption"
+            id="difficulty-hard"
+            value="hard"
+          />
+          <label for="difficulty-hard" style="color: var(--red)">H</label>
+          <input
+            type="radio"
+            name="difficultyOption"
+            id="difficulty-any"
+            value="any"
+          />
+          <label for="difficulty-any" style="color: var(--text-color)"
+            >any</label
+          >
+        </form>
+      </div>
+      <!-- <section class="m-2">
+        <h3>Category</h3>
+        <section class="container form-check">
+          <section class="row m-0">
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="linux"
+              />
+              <label class="form-check-label" for="linux" id="theme-label">
+                Linux
+              </label>
+            </section>
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="java"
+              />
+              <label class="form-check-label" for="java" id="theme-label">
+                Java
+              </label>
+            </section>
+          </section>
+
+          <section class="row">
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="html"
+              />
+              <label class="form-check-label" for="html" id="theme-label">
+                HTML
+              </label>
+            </section>
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="php"
+              />
+              <label class="form-check-label" for="php" id="theme-label">
+                PHP
+              </label>
+            </section>
+          </section>
+
+          <section class="row">
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="js"
+              />
+              <label class="form-check-label" for="js" id="theme-label">
+                JavaScript
+              </label>
+            </section>
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="docker"
+              />
+              <label class="form-check-label" for="docker" id="theme-label">
+                Docker
+              </label>
+            </section>
+          </section>
+          <section class="row">
+            <section class="col-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="devops"
+              />
+              <label class="form-check-label" for="devops" id="theme-label">
+                DevOps
+              </label>
+            </section>
+            <section class="col-5"></section>
+          </section>
+        </section>
+      </section> -->
+      <div>
+        <button type="button" id="settings-close-button" class="button mb-2">
+          <img src="../../assets/icons/x.svg" alt="" class="icon" />
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+    <div id="about-modal" class="hide modal">
+      <div>
+        <h2>How to play</h2>
+      </div>
+      <div class="modal-text">
+        <div class="modal-text-container">
+          <p class="text text-left">
+            Our <strong>Quiz</strong> is a version of the popular game of
+            Trivia.
+          </p>
+          <p class="text text-left">Each correct answer is 10 points.</p>
+          <p class="text text-left">
+            You have only 3 atempts (lifes) to answer the question correctly.
+          </p>
+          <p class="text text-left">
+            You have 3 skips to help you get another easier question.
+          </p>
+          <br />
+          <p>You can change the category or the difficulty in the settings.</p>
+          <p>Good Luck!</p>
+        </div>
+      </div>
+      <div>
+        <button type="button" id="about-close-button" class="button">
+          <img
+            src="../../assets/icons/x.svg"
+            alt=""
+            class="icon"
+            id="about-close-button"
+          />
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

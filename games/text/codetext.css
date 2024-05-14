@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.game-container {
+  width: calc(100vw - 40px);
+  margin: auto;
+  max-width: 1200px;
+  height: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+/*
+div {
+  user-select: none;
+}
+*/
+.titulo{
+  font-size: 50rem;
+  line-height: 30px;
+}
+.texto{
+  flex-grow: 1;
+  height: 300px;
+	overflow: auto;
+  padding: 12px 0;
+  line-height: 26px;
+  word-spacing: 4px;
+}
+
+.nextGame{
+  flex-grow: 1;
+  color: var(--text-color);
+  border: 2px solid var(--base4);
+  background: var(--base3);
+  height: 42px;
+  border-radius: 12px;
+  
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+}
+
+.writeSpace{
+  flex-grow: 1;
+  height: 40px;
+  border-radius: 12px;
+  border-style: none;
+  background: var(--base3);
+  color: var(--text-color);
+  padding-left: 16px;
+  
+}
+
+.navBottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.palpites{
+  flex-grow: 1;
+  height: 40px;
+  background: var(--base3);
+  border-radius: 10px;
+  display: flex;
+	align-items: center;
+  color: var(--text-color);
+  padding-left: 16px;
+} 
+
+.sendButton{
+  border-radius:12px ;
+  border-style: none;
+  height: 42px;
+  width: 42px;
+  background: var(--base3);
+  color: var(--text-color);
+}
+
+.notfound {
+  color: var(--base35);
+  background-color: var(--base35);
+}
+
+.correctProposition
+{
+  background-color: lightgreen;
+}
+
+.wrongProposition
+{
+  background-color: lightgray;
+}
+
+.alreadyMadeProposition
+{
+  background-color: lightpink;
+}
+
+.erros {
+  transform: translateX(0);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 20px);
+  width: 200px;
+  height: 100%;
+  background-color: #ccc;
+  transform: translateX(-200px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.win{
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+#numero {
+  color: green;
+}
+
+.nav-button{
+  border:0;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.overlay{
+  width: 0;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.89);
+  z-index: 9;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5;
+}
+.overlay-content{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay .attempt{
+  padding: 8px;
+  text-decoration: none;
+  color: #d4d1d1;
+  display: block;
+  transition: all 0.5;
+}
+
+.closebtn{
+  color: #ccc;
+  right: 15px;
+}
+
+.overlay .closebtn{
+  position: absolute;
+  top: 25px;
+  font-size: 60px;
+}
+
+
+.animate-color {
+  animation: changeColor 2s ease-in-out;
+}
+
+@keyframes changeColor {
+
+  0% {
+    background-color: rgb(0, 184, 0); 
+  }
+}

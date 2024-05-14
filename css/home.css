@@ -1,0 +1,168 @@
+screen {
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+.news-container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--base4);
+    position: float;
+}
+
+.news-card {
+    border-radius: 12px;
+    height: 80px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    background: var(--base3);
+    grid-template-columns: 1fr 2fr;
+}
+
+@media (max-height: 779px) {
+    .news-container {
+        width: 100%;
+        height: 80px;
+        position: float;
+        background: var(--base35);
+    }
+    
+    .news-card {
+        width: 100%;
+        height: 80px;
+        grid-template-columns: 1fr 2fr;
+        background: var(--base35);
+    }
+}
+
+.games-title {
+    margin: 40px 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--base2);
+    position: float;
+}
+
+.games-title h2 {
+    color: var(--text-color);
+}
+
+.games-list {
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    margin: auto;
+    border-radius: 12px;
+    height: 400px;
+    width: 90%;
+    min-width: 300px;
+    max-width: 400px;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    margin-bottom: 16px;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.05);
+    border: 3px solid var(--base2);
+}
+
+#CodeQuiz {
+    background-color: var(--quiz);
+}
+
+#CodeTerm {
+    background-color: var(--term);
+}
+
+#CodeText {
+    background-color: var(--text);
+}
+
+.game-card:hover {
+    background: var(--base2);
+    border: 3px solid var(--blue);
+}
+
+.news-image {
+    height: 80px;
+    background: var(--base1);
+    border-radius: 12px;
+} 
+
+.game-image {
+    background: var(--base1);
+    border-radius: 12px 12px 0 0;
+}
+
+.game-text {
+    width: calc(100% - 32px);
+    padding: 16px;
+}
+
+.game-text p {
+    color: black;
+}
+
+.game-title {
+    padding-bottom: 12px;
+    color: black;
+    font-size: 22px;
+}
+
+.game-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gamebutton {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 12px;
+    background-color: var(--base1);
+    color: var(--text-color);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.gamebutton:hover {
+    background-color: var(--base4);
+    color: var(--yellow);
+}
+
+#CodeQuiz .game-image{background-image: url("../assets/codequizsm.jpg");}
+#CodeTerm .game-image{background-image: url("../assets/codetermsm.jpg");}
+#CodeText .game-image{background-image: url("../assets/codetext2sm.jpg");}
+
+@media (max-height: 779px) {
+    screen {
+        overflow: scroll;
+    }
+    
+    .games-list {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .news-container {
+        width: 100%;
+        height: 80px;
+        position: float;
+    }
+    
+    .news-card {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+}
