@@ -1,80 +1,298 @@
-
-
 // Choose accent mode. If true, then accent must be correct. If false, accents won't matter. 
 var accentMode = true
 
-// The correct answer to be found
-var titleList = ["MongoDB", "Inheritance", "Pascal", "Linux", "Javascript", "Python","Lua","Java"];
-var textList = [`MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL) which is deemed non-free by several distributions. MongoDB is a member of the MACH Alliance. 10gen software company began developing MongoDB in 2007 as a component of a planned platform as a service product. In 2009, the company shifted to an open-source development model, with the company offering commercial support and other services. In 2013, 10gen changed its name to MongoDB Inc.
-On October 20, 2017, MongoDB became a publicly traded company, listed on NASDAQ as MDB with an IPO price of $24 per share.
-MongoDB is a global company with US headquarters in New York City, USA and International headquarters in Dublin, Ireland.
-On October 30, 2019, MongoDB teamed up with Alibaba Cloud, who will offer its customers a MongoDB-as-a-service solution. Customers can use the managed offering from BABA's global data centers.`,
+var answer = null;
+var textoOriginal = "";
+// Função chamada quando a página é carregada
+async function onPageLoad() {
+  try {
+    answer = await getRandomTitle();
+    console.log('Título obtido:', answer); 
+    if (answer && answer.id_title) {
+      const textoOriginal = await getTextForTitle(answer);
+      console.log('Texto original:', textoOriginal); 
+      const textoElement = document.getElementById('texto');
 
-  `In object-oriented programming, inheritance is the mechanism of basing an object or class upon another object (prototype-based inheritance) or class (class-based inheritance), retaining similar implementation. Also defined as deriving new classes (sub classes) from existing ones such as super class or base class and then forming them into a hierarchy of classes. In most class-based object-oriented languages, an object created through inheritance, a 'child object', acquires all the properties and behaviors of the 'parent object' , with the exception of: constructors, destructors, overloaded operators and friend functions of the base class. Inheritance allows programmers to create classes that are built upon existing classes, to specify a new implementation while maintaining the same behaviors (realizing an interface), to reuse code and to independently extend original software via public classes and interfaces. The relationships of objects or classes through inheritance give rise to a directed acyclic graph.`,
-
-  `Pascal is an imperative and procedural programming language, designed by Niklaus Wirth as a small, efficient language intended to encourage good programming practices using structured programming and data structuring. It is named in honour of the French mathematician, philosopher and physicist Blaise Pascal. Pascal was developed on the pattern of the ALGOL 60 language. Wirth was involved in the process to improve the language as part of the ALGOL X efforts and proposed a version named ALGOL W. This was not accepted, and the ALGOL X process bogged down. In 1968, Wirth decided to abandon the ALGOL X process and further improve ALGOL W, releasing this as Pascal in 1970. On top of ALGOL's scalars and arrays, Pascal enables defining complex datatypes and building dynamic and recursive data structures such as lists, trees and graphs. Pascal has strong typing on all objects, which means that one type of data cannot be converted to or interpreted as another without explicit conversions. Unlike C (and most languages in the C-family), Pascal allows nested procedure definitions to any level of depth, and also allows most kinds of definitions and declarations inside subroutines (procedures and functions). A program is thus syntactically similar to a single procedure or function. This is similar to the block structure of ALGOL 60, but restricted from arbitrary block statements to just procedures and functions. Pascal became very successful in the 1970s, notably on the burgeoning minicomputer market. Compilers were also available for many microcomputers as the field emerged in the late 1970s. It was widely used as a teaching language in university-level programming courses in the 1980s, and also used in production settings for writing commercial software during the same period. It was displaced by the C programming language during the late 1980s and early 1990s as UNIX-based systems became popular, and especially with the release of C++. A derivative named Object Pascal designed for object-oriented programming was developed in 1985. This was used by Apple Computer (for the Lisa and Macintosh machines) and Borland in the late 1980s and later developed into Delphi on the Microsoft Windows platform. Extensions to the Pascal concepts led to the languages Modula-2 and Oberon.`,
-
-  `is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged as a Linux distribution, which includes the kernel and supporting system software and libraries, many of which are provided by the GNU Project. Many Linux distributions use the word 'Linux' in their name, but the Free Software Foundation uses the name 'GNU/Linux' to emphasize the importance of GNU software, causing some controversy. Popular Linux distributions include Debian, Fedora Linux, and Ubuntu, the latter of which itself consists of many different distributions and modifications, including Lubuntu and Xubuntu. Commercial distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise. Desktop Linux distributions include a windowing system such  X11 or Wayland, and a desktop environment such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogether, or include a solution stack such as LAMP. Because Linux is freely redistributable, anyone may create a distribution for any purpose.Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system. Because of the dominance of the Linux-based Android on smartphones, Linux, including Android, has the largest installed base of all general-purpose operating systems, as of May 2022. Although Linux is, as of November 2022, used by only around 2.6 percent of desktop computers, the Chromebook, which runs the Linux kernel-based ChromeOS, dominates the US K-12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US. Linux is the leading operating system on servers (over 96.4% of the top 1 million web servers' operating systems are Linux), leads other big iron systems such as mainframe computers, and is used on all of the world's 500 fastest supercomputers (since November 2017, having gradually displaced all competitors). Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the firmware and is highly tailored to the system. `,
-
-  `JavaScript, often abbreviated as JS, is a programming language Steve Wozniak that is one of the core technologies of the World C Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications. The most popular runtime system for this usage is Node.js.Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.`,
-  `Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule.
- Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
- Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.
- Python consistently ranks as one of the most popular programming languages.`,
-`Lua is a lightweight, flexible, and powerful programming language designed to be easy to integrate into larger projects and extendable through its C API. It was created in the 1990s by a team of Brazilian programmers led by Roberto Ierusalimschy at the Department of Computer Science of PUC-Rio (Pontifical Catholic University of Rio de Janeiro).
-One of Lua's key features is its simplicity and elegance. It was designed to be simple to learn and use, maintaining a minimal set of essential concepts and features. Lua has a clean and concise syntax, making it highly readable and easily understood.
-Although Lua is an interpreted language, it is known for its high performance. Its implementation is efficient and fast, allowing Lua to run on a wide range of devices and systems, from resource-constrained embedded systems to high-performance servers.
-Lua has dynamic typing and automatic garbage collection, which simplifies the development process and eliminates the need for manual memory management. It supports common control structures such as conditionals, loops, and functions, while also offering advanced features like closures (functions that capture variables from the environment in which they were defined) and metatables (which allow the implementation of custom behaviors for objects).
-One of Lua's main applications is as a scripting language for games and real-time applications. It is widely used in the game industry due to its ease of integration with other languages, such as C++, and its efficiency. Several popular games, including World of Warcraft and Angry Birds, use Lua to create scripts that control game behavior and enable customization by players.
-Furthermore, Lua is often embedded as an extension language in larger applications. It provides a C API that allows developers to create interfaces between Lua and other languages, facilitating integration and extending the capabilities of the application. This flexibility makes Lua a popular choice for projects that require an embedded scripting language.
-Another advantage of Lua is its active and friendly community. There are forums, mailing lists, and various online resources available to help developers learn and share knowledge about Lua.
-In summary, Lua is a powerful, simple, and efficient programming language. Its combination of ease of use, performance, and flexibility makes it an attractive option for a variety of applications, from games to extensions in larger applications. If you are looking for a lightweight, easy-to-learn language with great potential, Lua is definitely an excellent choice.`,
-`Java is a widely-used programming language that was developed by James Gosling and his team at Sun Microsystems (now owned by Oracle) in the mid-1990s. Known for its simplicity, portability, and robustness, Java has become one of the most popular languages for developing a wide range of applications, from desktop software to enterprise systems and mobile apps.
-One of the key features of Java is its "write once, run anywhere" principle. Java programs are compiled into bytecode, which can be executed on any platform that has a Java Virtual Machine (JVM). This platform independence allows developers to create applications that can run on various operating systems without the need for recompilation. This cross-platform capability has made Java a popular choice for developing applications for diverse environments.
-Java follows an object-oriented programming (OOP) paradigm, which promotes modular and reusable code. It provides a rich set of libraries and frameworks that simplify the development process and enable developers to build robust and scalable applications. The Java Standard Edition (Java SE) includes core libraries for general-purpose development, while the Java Enterprise Edition (Java EE) extends the platform with additional libraries for building enterprise-level applications.
-Java's strong typing and static checking help detect errors at compile-time, making it easier to develop reliable and bug-free code. It also incorporates automatic memory management through its garbage collection mechanism, relieving developers from manual memory deallocation.
-Java has a vast and vibrant ecosystem with a wide range of tools, frameworks, and libraries that support various application domains. The Java Development Kit (JDK) provides essential tools for Java development, and popular frameworks like Spring, Hibernate, and JavaFX offer additional functionality for building web applications, database interactions, and graphical user interfaces.
-Furthermore, Java has gained significant popularity in the field of mobile app development with the introduction of Android, a mobile operating system that utilizes the Java programming language. The Android SDK (Software Development Kit) provides a comprehensive set of tools and APIs for creating mobile applications that run on Android devices.
-Java's success is also attributed to its strong community support. There are numerous online resources, forums, and communities where developers can seek help, share knowledge, and contribute to the growth of the language.
-In conclusion, Java is a powerful and versatile programming language that has proven its worth in a wide range of applications. With its platform independence, strong typing, robustness, and extensive ecosystem, Java continues to be a go-to choice for developers seeking to build scalable, cross-platform, and reliable applications.`];
-
-var answer = getRandomTitle()
-function getRandomTitle() {
-  var randomIndex = Math.floor(Math.random() * titleList.length);
-  return titleList[randomIndex];
-}
-function getTextForTitle(answer) {
-  var index = titleList.indexOf(answer);
-  if (index !== -1) {
-    return textList[index];
+      if (textoElement) {
+        computedtext = computeText(answer.title, textoOriginal);
+        console.log('Texto oal:', answer.title); 
+        // console.log('Texto computado:', computedtext);
+        textoElement.innerHTML = computedtext;
+      } else {
+        console.error('Elemento HTML não encontrado: texto'); 
+      }
+    } else {
+      console.error('Resposta inválida do título:', answer); 
+    }
+  } catch (error) {
+    console.error('Erro ao carregar a página:', error); 
   }
-  return "";
-}
-
-function onPageLoad() {
-  var answer = getRandomTitle();
-  var textoOriginal = getTextForTitle(answer);
-  console.log(answer); // Exibe o título no console (opcional)
-  // Faça o que você quiser com a variável 'answer' aqui, por exemplo, atribuir ao elemento de um elemento HTML:
-  var answerElement = document.getElementById("answer");
-  var textElement = document.getElementById("textoOriginal");
-  answerElement.innerHTML = answer;
-  textElement.innerHTML = answer;
 }
 
 
-// Here are the words that will be displayed at the beginning 
-var whitelist = ["often ", "as", "is", "a", "that", "is", "of", "the", "of", "along", "and", "As", "use", "on", "the", "for", "often", "All", "have", "a", "to", "the", "on", "is", "a", "often", "in", "that", "to", "the", "has", "and", "and", "has", "for", "with", "and", "the", "The", "does", "not", "any", "such", "as", "or", "the", "or", "other", "for", "were", "only", "in", "but", "are", "now", "of", "some", "and", "a", "of", "The", "most", "for", "this", "is", "Although", "and", "are", "in", "and", "the", "are", "and", "in"]
-
-// Text to be displayed below the answer/title
-var textoOriginal = getTextForTitle(answer); 
-console.log(answer)
-console.log(getTextForTitle(answer))
+var whitelist = ["often ", "as", "is", "a", "that", "is", "of", "the", "of", "along", "and", "As", "use", "on", "the", "for", "often", "All", "have", "a", "to", "the", "on", "is", "a", "often", "in", "that", "to", "the", "has", "and", "and", "has", "for", "with", "and", "the", "The", "does", "not", "any", "such", "as", "or", "the", "or", "other", "for", "were", "only", "in", "but", "are", "now", "of", "some", "and", "a", "of", "The", "most", "for", "this", "is", "Although", "and", "are", "in", "and", "the", "are", "and", "in"];
 
 function openNav() {
-  document.getElementById("myNav").style.width = '45%'
-}
-function closeNav() {
-  document.getElementById("myNav").style.width = '0%'
+  document.getElementById("myNav").style.width = '45%';
 }
 
+function closeNav() {
+  document.getElementById("myNav").style.width = '0%';
+}
+window.onload = onPageLoad;
+
+async function getRandomTitle() {
+  try {
+    const response = await fetch('http://localhost:3000/titlelist');
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.statusText}`);
+    }
+    const titleList = await response.json();
+
+    const randomIndex = Math.floor(Math.random() * titleList.length);
+    const randomTitle = titleList[randomIndex];
+
+    return randomTitle;
+  } catch (error) {
+    console.error('Erro ao obter título:', error);
+    throw error; // Repassa o erro para a função chamadora
+  }
+}
+
+function getTextForTitle(title) {
+  if (!title || !title.id_title) {
+    console.error('Título inválido:', title);
+    return Promise.resolve(''); // Retorna uma string vazia se o título for inválido
+  }
+
+  // console.log('Obtendo texto para o título:', title); // Verifique o título recebido
+
+  return fetch(`http://localhost:3000/titlelist/${title.id_title}`)
+    .then(response => {
+      console.log('Resposta da API:', response); // Verifique o objeto de resposta
+      if (response.ok) {
+        return response.json();
+      } else {
+        console.error('Erro na resposta da API:', response.statusText);
+        return ''; // Retorna uma string vazia se a resposta não for ok
+      }
+    })
+    .then(data => {
+      // console.log('Dados recebidos:', data); // Verifique os dados recebidos
+      return data.text || ''; // Retorna o texto ou uma string vazia se não existir
+    })
+    .catch(error => {
+      console.error('Erro ao obter texto:', error);
+      return ''; // Retorna uma string vazia em caso de erro
+    });
+}
+
+
+
+ //define o início de uma tabela com três colunas para exibir informações de pseudo e propostas.
+ var begin = "<table class=\"w3-table\"><tr><th>Pseudo</th><th>Proposition</th><th>Occurences</th></tr>"
+ //string vazia para ser usada posteriormente para armazenar dados.
+ var propositions = ""
+ var end = "</table>"
+ // pode ser usada para sinalizar se algo foi encontrado ou não.
+ var found = false;
+ //A matriz é inicializada como vazia e é usada posteriormente para armazenar várias proposições.
+ var allPropositions = []
+
+
+ var computedtext = computeText(textoOriginal);
+ document.getElementById("texto").innerHTML = computedtext;
+
+
+ document.addEventListener('keydown', function (event) {
+   if (event.keyCode === 13) {
+     palpite();
+   }
+ });
+
+ function nextText() {
+   location.reload();
+ }
+
+ var guessedWords = []
+
+
+ async function palpite() {
+  var message = document.getElementById("entrada-texto").value;
+  
+  if (message === "") {
+    alert('please type a word');
+    return;
+  } else if (whitelist.includes(message)) {
+    alert('already in text');
+    return;
+  } else if (guessedWords.includes(message)) {
+    alert('word already guessed');
+    return;
+  }
+
+  guessedWords.push(message);
+  console.log(guessedWords);
+
+  var divNumero = document.getElementById("numero");
+  var numeroAtual = parseInt(divNumero.innerHTML);
+  var novoNumero = numeroAtual + 1;
+  divNumero.innerHTML = novoNumero;
+
+  // Adicionar valor à div de erros
+  var divErros = document.querySelector(".erros");
+  divErros.innerHTML += message + "<br>";
+
+  var valorInput = document.getElementById("entrada-texto").value;
+
+  let texto = computedtext;
+  let palavra = message;
+
+  function contarPalavras(texto, palavra) {
+    let contador = 0;
+    const palavraMinuscula = palavra.toLowerCase();
+    const palavras = texto.toLowerCase().match(/\b\w+([-']\w+)*\b/g);
+
+    if (!palavras) {
+      return contador;
+    }
+
+    for (let i = 0; i < palavras.length; i++) {
+      if (palavras[i].toLowerCase() === palavraMinuscula && palavras[i] !== '') {
+        contador++;
+      }
+    }
+    contador = contador / 2;
+    return contador;
+  }
+
+  // Insere o valor do input na div attempt
+  let resultado = contarPalavras(texto, palavra);
+  document.getElementById("entrada-texto").value = "";
+  var divResultado = document.getElementById("result");
+  var divResults = document.getElementById("results");
+  result = resultado + " -  " + valorInput;
+  divResultado.innerHTML = result;
+  divResults.innerHTML += result + "<br>";
+
+  // Chama a função que verifica se a mensagem corresponde ao título
+  computeMessage(message, answer.title);
+}
+
+function computeMessage(message, answerTitle) {
+  var ok = true;
+  var alphabet = "abcdefghijklmnopqrstuvwxyz1234567890";
+
+  // Verifica se message é uma string
+  if (typeof message !== 'string') {
+    console.error('message não é uma string:', message);
+    return;
+  }
+
+  for (var i = 0; i < message.length; i++) {
+    if (!alphabet.includes(message[i].toLowerCase())) {
+      ok = false;
+    }
+  }
+
+  if (ok && message.length <= 26 && !found) {
+    var allOccurences;
+    if (accentMode) {
+      allOccurences = document.getElementsByClassName(message.toLowerCase());
+    } else {
+      allOccurences = document.getElementsByClassName(message.toLowerCase().latinise());
+    }
+
+    for (var i = 0; i < allOccurences.length; i++) {
+      allOccurences[i].classList.remove("notfound");
+      allOccurences[i].classList.add("animate-color");
+    }
+    if (!document.getElementById("texto").innerHTML.toLowerCase().split("</h1>")[0].includes("notfound")) {
+      found = true;
+      var allOccurences = document.getElementsByClassName("thisisaword");
+      for (var i = 0; i < allOccurences.length; i++) {
+        allOccurences[i].classList.remove("notfound");
+      }
+    }
+  }
+
+  if (typeof answerTitle !== 'string') {
+    console.error('answerTitle não é uma string:', answerTitle);
+    return;
+  }
+
+  if (accentMode && message.toLowerCase() == answerTitle.toLowerCase()) {
+    found = true;
+    var allOccurences = document.getElementsByClassName("thisisaword");
+
+    for (var i = 0; i < allOccurences.length; i++) {
+      allOccurences[i].classList.remove("notfound");
+    }
+    var entradaTexto = document.getElementById("entrada-texto");
+    var botao = document.getElementById("botao");
+    document.getElementById("numero").style.display = "block";
+    document.getElementById("resp").style.display = "block";
+    document.getElementById("resposta").style.display = "block";
+    document.getElementById("nextGame").style.display = "block";
+    entradaTexto.style.display = "none";
+    botao.style.display = "none";
+  }
+}
+
+// Função para processar o texto original
+function computeText(titulo, textoOriginal) {
+  if (!textoOriginal) {
+    console.error("textoOriginal está undefined ou vazio:", textoOriginal);
+    return "";
+  }
+  var alphabet = "abcdefghijklmnopqrstuvwxyz1234567890éèêçùàâœîôûïöäüë";
+  var computedtext = "";
+  var lines = textoOriginal.split('\n');
+  var outputline = "";
+
+  // Adiciona o título como a primeira linha
+  lines.unshift(titulo);
+
+  for (var i = 0; i < lines.length; i++) {
+    outputline = "";
+    if (lines[i].length > 0) {
+      var newword = "";
+      for (var j = 0; j < lines[i].length; j++) {
+        if (alphabet.includes(lines[i][j].toLowerCase())) {
+          newword += lines[i][j];
+        } else {
+          if (newword.length > 0) {
+            if (whitelist.includes(newword)) {
+              outputline += newword;
+            } else {
+              if (accentMode) {
+                outputline += "<span class=\"notfound thisisaword " + newword + "\">" + newword + "</span>";
+              } else {
+                outputline += "<span class=\"notfound thisisaword " + newword.latinise() + "\">" + newword + "</span>";
+              }
+            }
+            newword = "";
+          }
+          outputline += lines[i][j];
+        }
+      }
+      if (newword.length > 0) {
+        if (accentMode) {
+          outputline += "<span class=\"notfound thisisaword " + newword + "\">" + newword + "</span>";
+        } else {
+          outputline += "<span class=\"notfound thisisaword " + newword.latinise() + "\">" + newword + "</span>";
+        }
+        newword = "";
+      }
+    } else {
+      outputline = "";
+    }
+    if (i == 0) {
+      lines[i] = "<h2>" + outputline + "</h2> <br>";
+    } else {
+      lines[i] = "<p>" + outputline + "</p>";
+    }
+    computedtext += lines[i];
+  }
+  return computedtext;
+}

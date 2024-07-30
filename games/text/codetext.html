@@ -12,7 +12,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="../../styles.css" />
   <script src="../../js/script.js" defer></script>
-  <script src="codetext.js"></script>
+  
   <link rel="stylesheet" href="codetext.css">
 </head>
 
@@ -65,6 +65,8 @@
 
       <!--texto-->
       <div class="texto text" id="texto"> </div>
+      <div id="answer"></div>
+      <div id="textoOriginal"></div>
 
       <!--onde usuário ira digitar-->
       <div class="navBottom">
@@ -158,194 +160,8 @@
     </div>
   </div>
 </body>
-
+<script src="codetext.js"></script>
 <script>
-
-  //define o início de uma tabela com três colunas para exibir informações de pseudo e propostas.
-  var begin = "<table class=\"w3-table\"><tr><th>Pseudo</th><th>Proposition</th><th>Occurences</th></tr>"
-  //string vazia para ser usada posteriormente para armazenar dados.
-  var propositions = ""
-  var end = "</table>"
-  // pode ser usada para sinalizar se algo foi encontrado ou não.
-  var found = false;
-  //A matriz é inicializada como vazia e é usada posteriormente para armazenar várias proposições.
-  var allPropositions = []
-
-
-  var computedtext = computeText(textoOriginal);
-  document.getElementById("texto").innerHTML = computedtext;
-
-
-  document.addEventListener('keydown', function (event) {
-    if (event.keyCode === 13) {
-      palpite();
-    }
-  });
-
-  function nextText() {
-    location.reload();
-  }
-
-  var guessedWords = []
-
-  async function palpite() {
-    var message = document.getElementById("entrada-texto").value;
-    computeMessage(message);
-    if (message === "") {
-      alert('please type a word')
-      return;
-    } else if (whitelist.includes(message)) {
-      alert('already in text')
-      return;
-    } else if (guessedWords.includes(message)) {
-      alert('word already guessed')
-      return;
-    }
-    guessedWords.push(message);
-    console.log(guessedWords);
-
-    var divNumero = document.getElementById("numero");
-    var numeroAtual = parseInt(divNumero.innerHTML);
-    var novoNumero = numeroAtual + 1;
-    divNumero.innerHTML = novoNumero;
-
-    
-    // Adicionar valor a div de erros
-    var divErros = document.querySelector(".erros");
-
-    //document.getElementById("tentativas").innerHTML = message;
-    divErros.innerHTML += message + "<br>";
-
-    var valorInput = document.getElementById("entrada-texto").value;
-
-    let texto = computedtext;
-    let palavra = message;
-
-   function contarPalavras(texto, palavra) {
-  let contador = 0;
-  const palavraMinuscula = palavra.toLowerCase();
-  const palavras = texto.toLowerCase().match(/\b\w+([-']\w+)*\b/g);
-
-  for (let i = 0; i < palavras.length; i++) {
-    if (palavras[i].toLowerCase() === palavraMinuscula && palavras[i] !== '') {
-      contador++;
-    }
-  }
-  contador = contador/2;
-  return contador;
-}
-    
-
-    // Obtém a div attempt
-    var divAttempt = document.querySelector(".attempt");
-
-    // Insere o valor do input na div attempt
-    let resultado = contarPalavras(texto, palavra);
-    document.getElementById("entrada-texto").value = "";
-    var divResultado = document.getElementById("result");
-    var divResults = document.getElementById("results");
-    result = resultado + " -  " + valorInput;
-    divResultado.innerHTML = result;
-    divResults.innerHTML += result + "<br>";
-  }
-
-  function computeMessage(message) {
-    var ok = true;
-    var alphabet = "abcdefghijklmnopqrstuvwxyz1234567890";
-    for (var i = 0; i < message.length; i++) {
-      if (!alphabet.includes(message[i].toLowerCase())) {
-        ok = false;
-      }
-    }
-
-    if (ok && message.length <= 26 && !found) {
-      var allOccurences;
-      if (accentMode) {
-        allOccurences = document.getElementsByClassName(message.toLowerCase());
-      } else {
-        allOccurences = document.getElementsByClassName(message.toLowerCase().latinise());
-      }
-
-      for (var i = 0; i < allOccurences.length; i++) {
-        allOccurences[i].classList.remove("notfound");
-        allOccurences[i].classList.add("animate-color");
-      }
-      if (!document.getElementById("texto").innerHTML.toLowerCase().split("</h1>")[0].includes("notfound")) {
-        found = true;
-        var allOccurences = document.getElementsByClassName("thisisaword");
-        for (var i = 0; i < allOccurences.length; i++) {
-          allOccurences[i].classList.remove("notfound");
-        }
-      }
-    }
-
-    if (accentMode && message.toLowerCase() == answer.toLowerCase()) {
-      found = true;
-      var allOccurences = document.getElementsByClassName("thisisaword");
-
-      for (var i = 0; i < allOccurences.length; i++) {
-        allOccurences[i].classList.remove("notfound");
-      }
-      var entradaTexto = document.getElementById("entrada-texto");
-      var botao = document.getElementById("botao");
-      document.getElementById("numero").style.display = "block";
-      document.getElementById("resp").style.display = "block";
-      document.getElementById("resposta").style.display = "block";
-      document.getElementById("nextGame").style.display = "block";
-      entradaTexto.style.display = "none";
-      botao.style.display = "none";
-    }
-  }
-
-  function computeText(textoOriginal) {
-    var alphabet = "abcdefghijklmnopqrstuvwxyz1234567890éèêçùàâœîôûïöäüë"
-    var computedtext = ""
-    var lines = textoOriginal.split('\n')
-    //lines.shift()
-    lines.unshift(answer);
-    var begin = 0;
-    var end = 0;
-    var outputline = "";
-    for (var i = 0; i < lines.length; i++) {
-      outputline = "";
-      if (lines[i].length > 0) {
-        var newword = "";
-        for (var j = 0; j < lines[i].length; j++) {
-          if (alphabet.includes(lines[i][j].toLowerCase())) {
-            newword += lines[i][j]
-          }
-          else {
-            if (newword.length > 0) {
-              if (whitelist.includes(newword)) { outputline += newword }
-              else {
-                if (accentMode) { outputline += "<span class=\"notfound thisisaword " + newword + "\">" + newword + "</span>" }
-                else { outputline += "<span class=\"notfound thisisaword " + newword.latinise() + "\">" + newword + "</span>" }
-              }
-              newword = ""
-            }
-            outputline += lines[i][j]
-          }
-        }
-        if (newword.length > 0) {
-          if (accentMode) { outputline += "<span class=\"notfound thisisaword " + newword + "\">" + newword + "</span>" }
-          else { outputline += "<span class=\"notfound thisisaword " + newword.latinise() + "\">" + newword + "</span>" }
-          newword = ""
-        }
-      }
-      else {
-        outputline = "";
-      }
-      if (i == 0) {
-        lines[i] = "<h2>" + outputline + "</h2> <br>"
-      }
-      else {
-        lines[i] = "<p>" + outputline + "</p>"
-      }
-      computedtext += lines[i];
-    }
-    return computedtext
-  }
-
 
 </script>
 

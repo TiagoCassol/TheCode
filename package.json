@@ -1,0 +1,21 @@
+{
+  "name": "thecode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./js/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1",
+    "restify": "^11.1.0",
+    "restify-cors-middleware2": "^2.2.1",
+    "restify-errors": "^8.0.2"
+  }
+}
